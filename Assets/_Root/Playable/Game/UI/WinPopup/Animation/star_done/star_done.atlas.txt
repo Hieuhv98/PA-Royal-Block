@@ -1,0 +1,17 @@
+star_done.png
+size:776,776
+filter:Linear,Linear
+pma:true
+scale:0.5
+glow
+bounds:539,553,232,221
+glow_colored
+bounds:539,348,88,73
+star
+bounds:2,2,302,285
+star_light
+bounds:2,289,535,485
+star_orange
+bounds:539,423,128,128
+treasure_ray
+bounds:306,31,256,256

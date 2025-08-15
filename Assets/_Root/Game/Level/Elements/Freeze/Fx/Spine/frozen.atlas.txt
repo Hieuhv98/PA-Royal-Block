@@ -1,0 +1,12 @@
+frozen.png
+size:2012,760
+filter:Linear,Linear
+pma:true
+scale:0.7
+Flare10
+bounds:1942,691,67,67
+bg_freeze
+bounds:2,2,756,1938
+rotate:90
+icon_snowflake1
+bounds:1942,627,61,62

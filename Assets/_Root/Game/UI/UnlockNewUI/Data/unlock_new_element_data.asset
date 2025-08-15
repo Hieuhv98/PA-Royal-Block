@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa8374bb8dcd7c4593f9bb3ce9ccc50, type: 3}
+  m_Name: unlock_new_element_data
+  m_EditorClassIdentifier: 
+  currentLevel: {fileID: 11400000, guid: 4b75fe61160713244bd8c8bcf4ebecc6, type: 2}
+  unlockNewElementInfors:
+  - ElementUnlockType: 0
+    mainIconUnlock: {fileID: 21300000, guid: bd270cb8365a0a64883425df6b89285f, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: 29dd3c1d8ea16b44696180423bd609b6, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: e1213998a670b5f459c1e259f9bbe657, type: 3}
+    elementName: 
+    description: Freeze time for 15s
+    levelUnlock: 6
+  - ElementUnlockType: 4
+    mainIconUnlock: {fileID: 21300000, guid: ba460c6aa6217d24cb076e38b1d61c52, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: 10111b0cf8257b04299f38ede381805b, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 436ee9f0d9faf3142a7908dd4436ef7b, type: 3}
+    elementName: 
+    description: Move only in the shown direction
+    levelUnlock: 8
+  - ElementUnlockType: 1
+    mainIconUnlock: {fileID: 21300000, guid: 9e5296558c861b54c9063d8fc2f29c51, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: a914f2a624de10f4990f18bc77c74a90, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: d0d026d8ad1681148bc66432cf8f3542, type: 3}
+    elementName: 
+    description: Break 1 block or remove 1 layer
+    levelUnlock: 10
+  - ElementUnlockType: 2
+    mainIconUnlock: {fileID: 21300000, guid: 866efaa842c00f3499611cf1f0b92118, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: e8740cb47da48264f98fab5bcfdac5ab, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: c1c4ad12635e12045a321f4b2b684374, type: 3}
+    elementName: 
+    description: Remove all blocks of the chosen color
+    levelUnlock: 14
+  - ElementUnlockType: 3
+    mainIconUnlock: {fileID: 21300000, guid: 5f43a9e40cf7fdb4491cdea8300b31ae, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: 7e96819ce9f3d9b40993c53922f378a6, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 70a701a212588a3419b4f0e41683ddb2, type: 3}
+    elementName: 
+    description: Clear outer layers first
+    levelUnlock: 17
+  - ElementUnlockType: 6
+    mainIconUnlock: {fileID: 21300000, guid: b8b9e7678ac2c9a4f80c78ca23f78d31, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: b2308a20b85be3c41ab386335f2a5125, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 7eef19c006204ce4f9fdc35e21460567, type: 3}
+    elementName: 
+    description: Clear below to break the ice
+    levelUnlock: 26
+  - ElementUnlockType: 8
+    mainIconUnlock: {fileID: 21300000, guid: 8670aa34fba6c3041bb8597a84c607b8, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: f0e824c5fed7b9d419aadfe46d98591e, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 2df208261495e3e4ba1efdbc2be0a147, type: 3}
+    elementName: 
+    description: 'Only star blocks enter star doors. Tip: Normal blocks can follow
+      too!'
+    levelUnlock: 41
+  - ElementUnlockType: 5
+    mainIconUnlock: {fileID: 21300000, guid: eacd00860589bb947ac9ff3c379991dc, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: 4d26050633cf7854999f34278c46bb2a, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 8200ee49773c32c4d948f15ac57610ca, type: 3}
+    elementName: 
+    description: Clear the bomb before it explodes!
+    levelUnlock: 72
+  - ElementUnlockType: 7
+    mainIconUnlock: {fileID: 21300000, guid: cf1b5a2100585a244aceac7ea9709452, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: 04ad5b0046c3c9242b379e84d9dafcc1, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 8b3deeb1225cfa94d9e3c66145465e2f, type: 3}
+    elementName: 
+    description: Grab keys to unlock chains
+    levelUnlock: 77
+  - ElementUnlockType: 9
+    mainIconUnlock: {fileID: 21300000, guid: 7d53d29c06422724090c8a2a42c9d551, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: ce79263249f7285449e4fb4cfc0ebae7, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 504b82f2b4c8d0d448abe90696cf7708, type: 3}
+    elementName: 
+    description: Paired blocks move together. Clear one to split
+    levelUnlock: 81
+  - ElementUnlockType: 11
+    mainIconUnlock: {fileID: 21300000, guid: ae68dd4f8292a3849b4ff8276e45f2b7, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: 134aa41f4bd64bd47bf5ca9ee65fbd60, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: c86a5da644623074ebacaaa357a61dc0, type: 3}
+    elementName: 
+    description: Remove same-color scissors to cut ropes!
+    levelUnlock: 86
+  - ElementUnlockType: 10
+    mainIconUnlock: {fileID: 21300000, guid: d4b145e15728152408e96ad9460dd82a, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: d3575c399b348d34eb8d48ac248bf430, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 5f727f8287f66fc489527aa01a6309a3, type: 3}
+    elementName: 
+    description: 'Doors switch open/close after each move. Tip: Go through when open!'
+    levelUnlock: 90
+  - ElementUnlockType: 12
+    mainIconUnlock: {fileID: 21300000, guid: 994e5cb8f4a69c3479f0d39d7ec7bc6c, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: b6ea4b69ed6af0443ab75c947b2658c7, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: 35f263fc876bfe8469661e9155f8770e, type: 3}
+    elementName: 
+    description: Drag only same-color blocks onto the path!
+    levelUnlock: 122
+  - ElementUnlockType: 13
+    mainIconUnlock: {fileID: 21300000, guid: fa1e0c4c5a184c847bc8f7ab24a59122, type: 3}
+    titleIconUnlock: {fileID: 21300000, guid: 2c5e47b8454c7b649a1420e33f6a7f00, type: 3}
+    smallIconUnlcok: {fileID: 21300000, guid: fa1e0c4c5a184c847bc8f7ab24a59122, type: 3}
+    elementName: 
+    description: Clear below to break the ice
+    levelUnlock: 194

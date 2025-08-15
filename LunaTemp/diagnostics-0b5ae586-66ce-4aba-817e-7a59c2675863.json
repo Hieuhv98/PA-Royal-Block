@@ -1,0 +1,356 @@
+{
+    "BuildID": "0b5ae586-66ce-4aba-817e-7a59c2675863",
+    "Command": "project:build",
+    "ProjectID": "cda918763811bfc4d809dfe72c2337f6",
+    "ProjectStateHash": "d8b64981ce67ed851094f18e874624433354d8d9e68531f2b8ad1f18f3459e56",
+    "StageCompletedAt": 2,
+    "EarliestFatalError": 0,
+    "StartTime": 1755240388476,
+    "EndTime": 1755240460861,
+    "PlaygroundUserID": 17562,
+    "OperatingSystem": "win32",
+    "TargetPlatform": "develop",
+    "UnityVersion": "2022.3.54f1",
+    "LunaVersion": "6.4.0",
+    "LogCount": 12,
+    "Logs": [
+        {
+            "LogID": "d914dac8-e89c-4f8d-a8a3-8874dbf80f1b",
+            "Timestamp": 1755240390892,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 0,
+            "ErrorCode": "LP1030",
+            "Description": "TMP Font Asset uses unsupported 'Atlas Population Mode'",
+            "Details": [
+                "TMP Font Asset '{0}' uses Atlas Population Mode '{1}' which is not supported"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "TMP_LilitaOne",
+                "Dynamic"
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 0
+        },
+        {
+            "LogID": "3dc2dbde-dfb4-4bb4-8aae-40f379dc2ff9",
+            "Timestamp": 1755240391026,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 0,
+            "ErrorCode": "LP1030",
+            "Description": "TMP Font Asset uses unsupported 'Atlas Population Mode'",
+            "Details": [
+                "TMP Font Asset '{0}' uses Atlas Population Mode '{1}' which is not supported"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "TMP_LilitaOne_Outline",
+                "Dynamic"
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 1
+        },
+        {
+            "LogID": "69d8907e-aea8-4ec2-80a7-0efb99f443bd",
+            "Timestamp": 1755240395300,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 0,
+            "ErrorCode": "LP1030",
+            "Description": "TMP Font Asset uses unsupported 'Atlas Population Mode'",
+            "Details": [
+                "TMP Font Asset '{0}' uses Atlas Population Mode '{1}' which is not supported"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "LiberationSans SDF - Fallback",
+                "Dynamic"
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 2
+        },
+        {
+            "LogID": "e3d301e7-4e54-48c7-899c-9cd76325c777",
+            "Timestamp": 1755240424766,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of Rigidbody Component",
+            "Details": [
+                "There is extensive usage of the Rigidbody component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 65."
+            ],
+            "DescriptionValues": [
+                "Rigidbody"
+            ],
+            "DetailsValues": [
+                "Rigidbody",
+                "10",
+                "65"
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 3
+        },
+        {
+            "LogID": "31323680-dec4-4b7e-bb68-36210d583931",
+            "Timestamp": 1755240424766,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 72."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "72"
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 4
+        },
+        {
+            "LogID": "3c21f834-13ef-4601-a274-ffa68bf35b2e",
+            "Timestamp": 1755240424768,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 1,
+            "ErrorCode": "LP1023",
+            "Description": "Too many files for facebook platform",
+            "Details": [
+                "Too many files for facebook platform in use ($189) only $100 available"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "189",
+                "100"
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 5
+        },
+        {
+            "LogID": "67e8fa21-20b3-4d09-8772-ac87b9cb0bc6",
+            "Timestamp": 1755240424780,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 0,
+            "ErrorCode": "LP1027",
+            "Description": "This DOTween version is not supported",
+            "Details": [
+                "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 6
+        },
+        {
+            "LogID": "aecc770b-ebdb-4a53-921a-7802a65f39e1",
+            "Timestamp": 1755240424780,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 0,
+            "ErrorCode": "LP1015",
+            "Description": "This TMP version is not fully supported",
+            "Details": [
+                "The incorrect Text Mesh Pro for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 7
+        },
+        {
+            "LogID": "dfec0b5b-d61e-4dee-b3ac-e08094da08e8",
+            "Timestamp": 1755240424781,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 3,
+            "ErrorCode": "LP1002",
+            "Description": "Repeat wrap mode used on a texture with non power-of-two dimensions, this might not be rendered correctly.",
+            "Details": [
+                "Repeat wrap mode used on 'star_png' texture at 'Assets/EFFECT Tuyet/Texture/star_png.png' with non power-of-two dimensions, this might not be rendered correctly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "star_png",
+                "Assets/EFFECT Tuyet/Texture/star_png.png"
+            ],
+            "LogCount": 1,
+            "FilePath": "Assets/EFFECT Tuyet/Texture/star_png.png",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 8
+        },
+        {
+            "LogID": "5cbde294-ff2f-4f9d-87ff-72435eab49f7",
+            "Timestamp": 1755240424781,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "Model",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Hull",
+                "Hull (1)",
+                "Hull",
+                "Hull (1)",
+                "Hull",
+                "Hull (1)",
+                "Hull",
+                "Hull (1)",
+                "3D",
+                "3D",
+                "Model",
+                "Collisider",
+                "Collisider",
+                "Cube",
+                "Cube (1)",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Hull",
+                "Hull (1)",
+                "3D",
+                "3D",
+                "Model",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Collisider",
+                "Hull",
+                "Hull (1)",
+                "Hull",
+                "Hull (1)",
+                "Hull",
+                "Hull (1)",
+                "Hull",
+                "Hull (1)",
+                "3D",
+                "3D"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 54,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 9
+        },
+        {
+            "LogID": "72da9775-c0a4-4b71-98d3-e7130c8207a9",
+            "Timestamp": 1755240424781,
+            "Stage": 1,
+            "Severity": 0,
+            "ErrorType": 3,
+            "ErrorCode": "LP1008",
+            "Description": "There are missing components on TimmerBoosterUsingUI.",
+            "Details": [
+                "TimmerBoosterUsingUI",
+                "FreezeTime",
+                "Placeholder for referenced MonoBehaviour in Prefab instance (1)",
+                "Placeholder for referenced MonoBehaviour in Prefab instance (1)",
+                "Placeholder for referenced MonoBehaviour in Prefab instance (1)",
+                "Level 8",
+                "Level Base",
+                "TimmerBoosterUsingUI",
+                "FreezeTime",
+                "Level 8"
+            ],
+            "DescriptionValues": [
+                "TimmerBoosterUsingUI"
+            ],
+            "DetailsValues": [],
+            "LogCount": 10,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 10
+        },
+        {
+            "LogID": "1413e4e0-7fda-4f8e-b073-d1173c56b08c",
+            "Order": 11,
+            "Timestamp": 1755240460773,
+            "Stage": 3,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP2007",
+            "Description": "Bridge exception",
+            "Details": [
+                "An unknown compilation error has occurred. Please see luna.log for more details",
+                "E:\\Pack\\Luna\\pipeline\\templates\\LunaCompiler\\packages\\Bridge.Min.17.9.42-luna\\build\\Bridge.Min.targets(24,4): error : 2025-08-15T13:47:40:710 \tError\t\t[ErrorMessage] E:\\Projects\\My project\\LunaTemp\\stage3\\processed-scripts\\Assets\\_Root\\Game\\Level\\Elements\\Gate\\Gate.cs:179,30 - Unexpected symbol `switch' [E:\\Pack\\Luna\\pipeline\\templates\\LunaCompiler\\Scripts\\Scripts.csproj]"
+            ],
+            "DescriptionValues": [
+                "E:\\Pack\\Luna\\pipeline\\templates\\LunaCompiler\\packages\\Bridge.Min.17.9.42-luna\\build\\Bridge.Min.targets(24,4): error : 2025-08-15T13:47:40:710 \tError\t\t[ErrorMessage] E:\\Projects\\My project\\LunaTemp\\stage3\\processed-scripts\\Assets\\_Root\\Game\\Level\\Elements\\Gate\\Gate.cs:179,30 - Unexpected symbol `switch' [E:\\Pack\\Luna\\pipeline\\templates\\LunaCompiler\\Scripts\\Scripts.csproj]"
+            ],
+            "DetailsValues": null,
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": null,
+            "ClassName": null,
+            "MemberName": null
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+trans_hard_lv.png
+size:828,776
+filter:Linear,Linear
+pma:true
+Copy of fx_hard 1
+bounds:2,187,596,587
+Copy of text_hard 1
+bounds:600,7,493,195
+rotate:90
+Copy of text_level 1
+bounds:2,2,482,183
+icon_hard_lv
+bounds:600,502,272,225
+rotate:90

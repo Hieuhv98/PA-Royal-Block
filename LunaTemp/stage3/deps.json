@@ -1,0 +1,598 @@
+{
+  "ignores": [
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/VisualEffect/VfxSpawner.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Camera/Extension.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Map/Creater/Grid/Extension.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/AudioHelper.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleAudio.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModulePhysics.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleSprite.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleUI.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleUnityVersion.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/EEasingType.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Misc/Common.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Misc/Common.SkeletonGraphic.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Misc/Common.Transform.cs",
+    "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/ObjectPooling/Pool.cs"
+  ],
+  "groups": [
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/_GamePlay/GameSettings.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Playable/Game/UI/WinPopup/WinPopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Playable/Game/Manager/GamePlayableManager.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Custom_Scriptable_Event/EventGetGameState.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Level/CurrentLevel/EventGetTransformCurrentLevel.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Level/Level.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Level/Event/EventGetCurrentLevel.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Level/LevelLoader.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/BaseMono.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Coin/CoinGenerate.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Vector3Event.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Coin/CoinSystem.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Coin/CoinUpdater.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/EventNoParam.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Star/StarGenerate.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/IntegerEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupGamePlay/GameplayPopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/UIPopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupLose/LosePopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Integer_Variable/IntegerVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Star/StarSystem.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Star/StarUpdater.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/GameObjectEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/GameObjectEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Base_Event/BaseEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/BooleanEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/BooleanEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/BoardBoosterGuidPopup/Scripts/BoardBoosterGuidPopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Base_Event/BaseEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Tracking/Event/TrackingEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Tracking/TrackingParameter.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Music_Event/PlayMusicEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/AudioHelper.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/SoundCache.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupGamePlay/TimeGroup/TimingController.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Boolean_Variable/BooleanVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupSetting/SettingPopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupSetting/SettingPopupInGame.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Float_Variable/FloatVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupSetting/Switcher.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Vibration/Vibration.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Game_Service/Service_Initialization/VibrationInitialization.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Game_Service/Service_Initialization/ServiceInitialization.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Game_Service/Service_Initialization/PoolInitialization.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/ObjectPooling/Pool.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Common/PooledParticleCallback.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Freeze/FreezeSystem.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Sfx_Event/PlaySfxEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Bomb/Bomb.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/SoundData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Data/LevelTypeData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Data/LevelModeData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Level/LevelSettings.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/UnlockNewUI/Scripts/EElementType.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/UnlockNewUI/Scripts/UnlockNewElementData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/HomeUI/Script/ProcessItemGroup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/UnlockNewUI/Scripts/UnlockNewElementPopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Shutter/Shutter.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Components/AnimatorComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Shutter/IShutter.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/BuyBooster/Scripts/BuyBoosterPopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/King/KingUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/Transition/Transittion.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/ReplayPopup/Scripts/ReplayPopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Heart/Data/HeartData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Heart/Manager/HeartManager.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Heart/UI/HeartUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/PlayerImmortalManager/Scripts/ImmortalData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Data/UserData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Common/Constant.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Data/UserData.DailyReward.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Data/UserData.SkinShop.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DataStorage/Runtime/GameData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Additional Time/LevelAdditionalTime.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Settings/Graphics/GraphicsQualitySetting.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Settings/Graphics/GraphicsQualitySettingUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/BG/Data/PlaneData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/BG/BGLevel.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Camera/CameraSystem.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/BG/Data/Manager/PlaneManagerData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/BG/UI/SelectBackGroundUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/BG/UI/Item/SelectBackGroundItemUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/String_Variable/StringVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupUpdate/UpdatePopup.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/Lose/Scripts/LoseData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Tracking/Enum/TrackingEnum.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/String_Variable/StringVariableListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Base_Variable/BaseVariableListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Boolean_Variable/BooleanVariableListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/BooleanEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Base_Event/BaseEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Dictionary_Event/DictionaryEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Dictionary_Event/DictionaryEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Dictionary_Event/DictionaryEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/EventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/EventListenerNoParam.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/FloatEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/FloatEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/FloatEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Float_Variable/FloatVariableListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/GameObjectEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/IntegerEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/IntegerEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Integer_Variable/IntegerVariableListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/ObjectEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/ObjectEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/ObjectEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Object_Variable/ObjectVariableListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Object_Variable/ObjectVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Object_Variable/ObjectReference.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Base_Variable/BaseReference.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Boolean_Variable/BooleanReference.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Float_Variable/FloatReference.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Integer_Variable/IntegerReference.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/ShortDouble_Variable/ShortDoubleReference.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DataType/ShortDouble.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/ShortDouble_Event/ShortDoubleEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/ShortDouble_Event/ShortDoubleEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DataType/ShortDouble.Units.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/ShortDouble_Event/ShortDoubleEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/ShortDouble_Variable/ShortDoubleVariableListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/ShortDouble_Variable/ShortDoubleVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Base_Variable/BaseVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Vector3_Variable/Vector3Variable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/ObjectBase.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Plane/Plane.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Map/Creater/MapSystem.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Map/Creater/Grid/GridCreator.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Map/Creater/Grid/Cell/CellGrid.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Map/Creater/Grid/GridSystem.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Map/Creater/Grid/Setting/GridSetting.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Map/Creater/Grid/Extension.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Map/Creater/Grid/SetCenterPosition.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Walls/Wall.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Walls/WallPath.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/IObject.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Freeze/IFreezer.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Data/Config/Color/ColorConfig.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Star/ObjectStar.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Data/Config/Direction/DirectionConfig.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Vector3_Variable/Vector3Reference.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Vector3_Variable/Vector3VariableListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Vector3EventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Vector3EventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Interface_Variable/IVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Base_Variable/IGuidVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Variables/Runtime/Interface_Variable/IReference.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/StringEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/StringEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/StringEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/TransformEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/TransformEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/TransformEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Interface_Event/IEventResponse.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/MonoGlobal.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/App.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/VisualEffect/VfxSpawner.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/VisualEffect/VfxData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/DelayHandle.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/Common/RotateUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Playable/Game/UI/WinPopup/Aniamtor/AnimatorUIControl.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/SpineAttributes.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/AnimationReferenceAsset.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/ISkeletonAnimation.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/PointFollower.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderer.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollower.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoneFollowerGraphic.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollower.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtility.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Following/BoundingBoxFollowerGraphic.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityBone.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/SkeletonUtilityConstraint.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonAnimation.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataAsset.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/EventDataReferenceAsset.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonMecanim.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonMecanimRootMotion.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotionBase.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/RootMotion/SkeletonRootMotion.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/TimelineExtensions.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataCompatibility.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/AtlasAssetBase.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/OnDemandTextureLoader.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SpineAtlasAsset.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SpineSpriteAtlasAsset.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/BlendModeMaterials.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/SkeletonDataModifierAsset.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/BlendModeMaterialsAsset.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Asset Types/RegionlessAttachmentLoader.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonRendererCustomMaterials.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonRenderSeparator.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRenderSeparator/SkeletonPartsRenderer.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshGenerator.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/SkeletonRendererInstruction.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/MeshRendererBuffers.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/DoubleBuffered.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Mesh Generation/SpineMesh.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SkeletonExtensions.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/ActivateBasedOnFlipDirection.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/SoundComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/AudioManager.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Music_Event/StopMusicEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Music_Event/PauseMusicEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Music_Event/ResumeMusicEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Sfx_Event/StopSfxEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Sfx_Event/PauseSfxEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Sfx_Event/ResumeSfxEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Sfx_Event/FinishSfxEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Sfx_Event/StopAllSfxEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Volume_Variable/MusicVolumeChange.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Audio/Runtime/Volume_Variable/SfxVolumeChange.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/CacheComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/ResizeCameraOrthographicComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/ResizeMatchCanvasScalerComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Misc/Common.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Misc/Common.SkeletonGraphic.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/BaseSO.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/IEntity.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/RuntimeInitialize.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DataStorage/Runtime/SerializeAdapter.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Misc/Common.Physics.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Misc/Common.Transform.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonRendererCustomMaterials/SkeletonGraphicCustomMaterials.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/Internal/SkeletonSubmeshGraphic.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Button/Runtime/ButtonCustom.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Button/Runtime/ButtonText.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Button/Runtime/ButtonTMP.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Button/Runtime/ButtonUI_Text.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Button/Runtime/ButtonUI_TMP.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Button/Runtime/ButtonUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Custom/ClickButtonEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Freeze/Prefab/FreezePrefab.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/ObjectPooling/PoolHandle.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/ObjectPooling/PoolData.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/ObjectPooling/PooledObjectId.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Game_Service/Service_Initialization/RuntimeInitialization.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/Tutorial/Button/ButtonTutorialUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/UI/Tutorial/TutorialUI.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/TouchInput/Runtime/InputTouchEvent/InputPreventTouchVariable.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/TouchInput/Runtime/TouchInputManager.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/TouchInput/Runtime/InputTouchEvent/InputEventTouchBegin.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/TouchSystem/TouchSystem.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/TouchInput/Runtime/InputTouchEvent/InputEventTouchEnd.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/TouchInput/Runtime/InputTouchEvent/InputEventTouchMove.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/TouchInput/Runtime/InputTouchEvent/InputEventTouchStationary.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/TouchInput/Runtime/InputTouchEvent/InputEventTouchCancel.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/Event_Result/BoolEventBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/Event_Result/BoolEventFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/Event_Result/BoolEventGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/Event_Result/BoolEventIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/Event_Result/BoolEventObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/Event_Result/BoolEventStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/Event_Result/BoolEventTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Boolean_Event/Event_Result/BoolEventVector3Result.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/Event_Result/FloatEventBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/Event_Result/FloatEventFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/Event_Result/FloatEventGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/Event_Result/FloatEventIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/Event_Result/FloatEventObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/Event_Result/FloatEventStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/Event_Result/FloatEventTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Float_Event/Event_Result/FloatEventVector3Result.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/Event_Result/GameObjectEventBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/Event_Result/GameObjectEventFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/Event_Result/GameObjectEventGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/Event_Result/GameObjectEventIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/Event_Result/GameObjectEventObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/Event_Result/GameObjectEventStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/Event_Result/GameObjectEventTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/GameObject_Event/Event_Result/GameObjectEventVector3Result.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/Event_Result/IntEventBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/Event_Result/IntEventFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/Event_Result/IntEventGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/Event_Result/IntEventIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/Event_Result/IntEventObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/Event_Result/IntEventStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/Event_Result/IntEventTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Integer_Event/Event_Result/IntEventVector3Result.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Interface_Event/IEventListener.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Interface_Event/IEvent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/Event_Result/ObjectEventBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/Event_Result/ObjectEventFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/Event_Result/ObjectEventGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/Event_Result/ObjectEventIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/Event_Result/ObjectEventObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/Event_Result/ObjectEventStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/Event_Result/ObjectEventTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Object_Event/Event_Result/ObjectEventVector3Result.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/Event_Result/StringEventBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/Event_Result/StringEventFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/Event_Result/StringEventGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/Event_Result/StringEventIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/Event_Result/StringEventObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/Event_Result/StringEventStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/Event_Result/StringEventTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/String_Event/Event_Result/StringEventVector3Result.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/Event_Result/TransformEventBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/Event_Result/TransformEventFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/Event_Result/TransformEventGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/Event_Result/TransformEventIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/Event_Result/TransformEventObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/Event_Result/TransformEventStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/Event_Result/TransformEventTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Transform_Event/Event_Result/TransformEventVector3Result.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Event_Result/Vector3EventBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Event_Result/Vector3EventFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Event_Result/Vector3EventGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Event_Result/Vector3EventIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Event_Result/Vector3EventObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Event_Result/Vector3EventStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Event_Result/Vector3EventTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Vector3_Event/Event_Result/Vector3EventVector3Result.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Base_Event/EventListenerMono.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupManager.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/UI/PopupSettings.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Components/CollisionComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Data/LevelConfig.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Sticky/ConnectionPrefab.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Elements/Swither/GateSwitcher.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Outline/Outline.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/BounceComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/FollowTargetComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/MoveComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/RotateComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/SafeAreaComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/TimeRemainingComponent.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Level/Event/EventLoadLevel.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Project/Scripts/Level/Event/EventGetPreviousLevel.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamBoolResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamFloatResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamGameObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamIntResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamObjectResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamStringResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamTransformResult.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Events/Runtime/Event_NoParam/Event_Result/EventNoParamVector3Result.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Camera/Extension.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Collections/CollectionBase.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Data/Config/Texture/TextureConfig.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Game/Level/Mask/Mask.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/_Root/Playable/Game/UI/Button/ButtonCTA.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/JMO Assets/Toony Colors Pro/Scripts/TCP2_CameraDepth.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/JMO Assets/Toony Colors Pro/Scripts/TCP2_GetPosOnWater.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/JMO Assets/Toony Colors Pro/Scripts/TCP2_GetVertexWavesPosition.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/JMO Assets/Toony Colors Pro/Scripts/TCP2_PlanarReflection.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/JMO Assets/Toony Colors Pro/Scripts/TCP2_RuntimeUtils.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/JMO Assets/Toony Colors Pro/Scripts/TCP2_ShaderUpdateUnityTime.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/EditorSkeletonPlayer.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowLocationRigidbody2D.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Components/SkeletonUtility/FollowSkeletonUtilityRootRotation.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Modules/TK2D/SpriteCollectionAttachmentLoader.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AtlasUtilities.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentCloneExtensions.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/AttachmentRegionExtensions.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/BuildUtilities.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/MaterialChecks.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/MathUtilities.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/SettingsTriState.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimation.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationComplete.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineAnimationEnd.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-unity/Utility/YieldInstructions/WaitForSpineTrackEntryEnd.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/AnimancerComponent/HandleAnimancerComponent.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/SkeletonComponent/AnimationSkeleton/AnimationSkeleton.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/SkeletonComponent/AnimationSkeleton/AnimationSkeletonComponent.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/SkeletonComponent/AnimationSkeleton/AnimationSkeletonUIComponent.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/SkeletonComponent/SkinSkeleton/SkinSkeleton.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/SkeletonComponent/SkinSkeleton/SkinSkeletonComponent.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Component/SkeletonComponent/SkinSkeleton/SkinSkeletonUIComponent.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Core/Runtime/Optional.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleUI.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/DOTween/Modules/EEasingType.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/Sunflower/VirtueSky/Misc/Common.SkeletonAnimation.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark01_UGUI.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark01.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark02.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TextMeshProFloatingText.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TextMeshSpawner.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark03.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark04.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/CameraController.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/ChatController.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/DropdownSample.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/EnvMapAnimator.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/ObjectSpin.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/ShaderPropAnimator.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/SimpleScript.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/SkewTextExample.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TeleType.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TextConsoleSimulator.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_DigitValidator.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_ExampleScript_01.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_FrameRateCounter.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_PhoneNumberValidator.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextEventCheck.cs",
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextEventHandler.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextInfoDebugTool.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextSelector_A.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextSelector_B.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_UiFrameRateCounter.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMPro_InstructionOverlay.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexColorCycler.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexJitter.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexShakeA.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexShakeB.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexZoom.cs"
+    ],
+    [
+      "E:/Projects/My project/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/WarpTextExample.cs"
+    ],
+    [
+      "E:/Pack/Luna/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "E:/Pack/Luna/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "E:/Pack/Luna/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}

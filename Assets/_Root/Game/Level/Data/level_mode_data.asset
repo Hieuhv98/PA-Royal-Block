@@ -1,0 +1,1155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83850b841306c9042ae15b967d84cb1b, type: 3}
+  m_Name: level_mode_data
+  m_EditorClassIdentifier: 
+  levelSettings: {fileID: 11400000, guid: 17fc1781fab1682409f50f8ce80eef5b, type: 2}
+  levelTypeData: {fileID: 11400000, guid: f1eb892cae124d540943700697159b55, type: 2}
+  levelModeInfors:
+  - levelIndex: 1
+    star: 1
+    levelMode: 0
+  - levelIndex: 2
+    star: 1
+    levelMode: 0
+  - levelIndex: 3
+    star: 1
+    levelMode: 0
+  - levelIndex: 4
+    star: 1
+    levelMode: 0
+  - levelIndex: 5
+    star: 1
+    levelMode: 0
+  - levelIndex: 6
+    star: 1
+    levelMode: 1
+  - levelIndex: 7
+    star: 1
+    levelMode: 0
+  - levelIndex: 8
+    star: 1
+    levelMode: 0
+  - levelIndex: 9
+    star: 1
+    levelMode: 0
+  - levelIndex: 10
+    star: 1
+    levelMode: 1
+  - levelIndex: 11
+    star: 1
+    levelMode: 0
+  - levelIndex: 12
+    star: 1
+    levelMode: 0
+  - levelIndex: 13
+    star: 1
+    levelMode: 0
+  - levelIndex: 14
+    star: 1
+    levelMode: 0
+  - levelIndex: 15
+    star: 1
+    levelMode: 1
+  - levelIndex: 16
+    star: 1
+    levelMode: 0
+  - levelIndex: 17
+    star: 1
+    levelMode: 0
+  - levelIndex: 18
+    star: 1
+    levelMode: 2
+  - levelIndex: 19
+    star: 1
+    levelMode: 0
+  - levelIndex: 20
+    star: 1
+    levelMode: 1
+  - levelIndex: 21
+    star: 1
+    levelMode: 2
+  - levelIndex: 22
+    star: 1
+    levelMode: 0
+  - levelIndex: 23
+    star: 1
+    levelMode: 0
+  - levelIndex: 24
+    star: 1
+    levelMode: 1
+  - levelIndex: 25
+    star: 1
+    levelMode: 2
+  - levelIndex: 26
+    star: 1
+    levelMode: 0
+  - levelIndex: 27
+    star: 1
+    levelMode: 0
+  - levelIndex: 28
+    star: 1
+    levelMode: 0
+  - levelIndex: 29
+    star: 1
+    levelMode: 0
+  - levelIndex: 30
+    star: 1
+    levelMode: 2
+  - levelIndex: 31
+    star: 1
+    levelMode: 0
+  - levelIndex: 32
+    star: 1
+    levelMode: 2
+  - levelIndex: 33
+    star: 1
+    levelMode: 1
+  - levelIndex: 34
+    star: 1
+    levelMode: 0
+  - levelIndex: 35
+    star: 1
+    levelMode: 0
+  - levelIndex: 36
+    star: 1
+    levelMode: 0
+  - levelIndex: 37
+    star: 1
+    levelMode: 0
+  - levelIndex: 38
+    star: 1
+    levelMode: 2
+  - levelIndex: 39
+    star: 1
+    levelMode: 0
+  - levelIndex: 40
+    star: 1
+    levelMode: 0
+  - levelIndex: 41
+    star: 1
+    levelMode: 0
+  - levelIndex: 42
+    star: 1
+    levelMode: 0
+  - levelIndex: 43
+    star: 1
+    levelMode: 0
+  - levelIndex: 44
+    star: 1
+    levelMode: 0
+  - levelIndex: 45
+    star: 1
+    levelMode: 1
+  - levelIndex: 46
+    star: 1
+    levelMode: 0
+  - levelIndex: 47
+    star: 1
+    levelMode: 0
+  - levelIndex: 48
+    star: 1
+    levelMode: 0
+  - levelIndex: 49
+    star: 1
+    levelMode: 2
+  - levelIndex: 50
+    star: 1
+    levelMode: 0
+  - levelIndex: 51
+    star: 1
+    levelMode: 2
+  - levelIndex: 52
+    star: 1
+    levelMode: 0
+  - levelIndex: 53
+    star: 1
+    levelMode: 0
+  - levelIndex: 54
+    star: 1
+    levelMode: 0
+  - levelIndex: 55
+    star: 1
+    levelMode: 0
+  - levelIndex: 56
+    star: 1
+    levelMode: 0
+  - levelIndex: 57
+    star: 1
+    levelMode: 0
+  - levelIndex: 58
+    star: 1
+    levelMode: 2
+  - levelIndex: 59
+    star: 1
+    levelMode: 1
+  - levelIndex: 60
+    star: 1
+    levelMode: 0
+  - levelIndex: 61
+    star: 1
+    levelMode: 1
+  - levelIndex: 62
+    star: 1
+    levelMode: 0
+  - levelIndex: 63
+    star: 1
+    levelMode: 0
+  - levelIndex: 64
+    star: 1
+    levelMode: 0
+  - levelIndex: 65
+    star: 1
+    levelMode: 0
+  - levelIndex: 66
+    star: 1
+    levelMode: 1
+  - levelIndex: 67
+    star: 1
+    levelMode: 0
+  - levelIndex: 68
+    star: 1
+    levelMode: 1
+  - levelIndex: 69
+    star: 1
+    levelMode: 1
+  - levelIndex: 70
+    star: 1
+    levelMode: 2
+  - levelIndex: 71
+    star: 1
+    levelMode: 0
+  - levelIndex: 72
+    star: 1
+    levelMode: 1
+  - levelIndex: 73
+    star: 1
+    levelMode: 0
+  - levelIndex: 74
+    star: 1
+    levelMode: 1
+  - levelIndex: 75
+    star: 1
+    levelMode: 0
+  - levelIndex: 76
+    star: 1
+    levelMode: 0
+  - levelIndex: 77
+    star: 1
+    levelMode: 0
+  - levelIndex: 78
+    star: 1
+    levelMode: 0
+  - levelIndex: 79
+    star: 1
+    levelMode: 1
+  - levelIndex: 80
+    star: 1
+    levelMode: 2
+  - levelIndex: 81
+    star: 1
+    levelMode: 0
+  - levelIndex: 82
+    star: 1
+    levelMode: 1
+  - levelIndex: 83
+    star: 1
+    levelMode: 0
+  - levelIndex: 84
+    star: 1
+    levelMode: 1
+  - levelIndex: 85
+    star: 1
+    levelMode: 2
+  - levelIndex: 86
+    star: 1
+    levelMode: 0
+  - levelIndex: 87
+    star: 1
+    levelMode: 0
+  - levelIndex: 88
+    star: 1
+    levelMode: 2
+  - levelIndex: 89
+    star: 1
+    levelMode: 1
+  - levelIndex: 90
+    star: 1
+    levelMode: 2
+  - levelIndex: 91
+    star: 1
+    levelMode: 0
+  - levelIndex: 92
+    star: 1
+    levelMode: 0
+  - levelIndex: 93
+    star: 1
+    levelMode: 0
+  - levelIndex: 94
+    star: 1
+    levelMode: 1
+  - levelIndex: 95
+    star: 1
+    levelMode: 1
+  - levelIndex: 96
+    star: 1
+    levelMode: 2
+  - levelIndex: 97
+    star: 1
+    levelMode: 0
+  - levelIndex: 98
+    star: 1
+    levelMode: 0
+  - levelIndex: 99
+    star: 1
+    levelMode: 0
+  - levelIndex: 100
+    star: 1
+    levelMode: 0
+  - levelIndex: 101
+    star: 1
+    levelMode: 0
+  - levelIndex: 102
+    star: 1
+    levelMode: 0
+  - levelIndex: 103
+    star: 1
+    levelMode: 1
+  - levelIndex: 104
+    star: 1
+    levelMode: 1
+  - levelIndex: 105
+    star: 1
+    levelMode: 2
+  - levelIndex: 106
+    star: 1
+    levelMode: 0
+  - levelIndex: 107
+    star: 1
+    levelMode: 2
+  - levelIndex: 108
+    star: 1
+    levelMode: 1
+  - levelIndex: 109
+    star: 1
+    levelMode: 0
+  - levelIndex: 110
+    star: 1
+    levelMode: 0
+  - levelIndex: 111
+    star: 1
+    levelMode: 1
+  - levelIndex: 112
+    star: 1
+    levelMode: 0
+  - levelIndex: 113
+    star: 1
+    levelMode: 0
+  - levelIndex: 114
+    star: 1
+    levelMode: 0
+  - levelIndex: 115
+    star: 1
+    levelMode: 1
+  - levelIndex: 116
+    star: 1
+    levelMode: 2
+  - levelIndex: 117
+    star: 1
+    levelMode: 0
+  - levelIndex: 118
+    star: 1
+    levelMode: 0
+  - levelIndex: 119
+    star: 1
+    levelMode: 1
+  - levelIndex: 120
+    star: 1
+    levelMode: 0
+  - levelIndex: 121
+    star: 1
+    levelMode: 1
+  - levelIndex: 122
+    star: 1
+    levelMode: 0
+  - levelIndex: 123
+    star: 1
+    levelMode: 0
+  - levelIndex: 124
+    star: 1
+    levelMode: 0
+  - levelIndex: 125
+    star: 1
+    levelMode: 2
+  - levelIndex: 126
+    star: 1
+    levelMode: 0
+  - levelIndex: 127
+    star: 1
+    levelMode: 0
+  - levelIndex: 128
+    star: 1
+    levelMode: 2
+  - levelIndex: 129
+    star: 1
+    levelMode: 0
+  - levelIndex: 130
+    star: 1
+    levelMode: 0
+  - levelIndex: 131
+    star: 1
+    levelMode: 2
+  - levelIndex: 132
+    star: 1
+    levelMode: 0
+  - levelIndex: 133
+    star: 1
+    levelMode: 1
+  - levelIndex: 134
+    star: 1
+    levelMode: 0
+  - levelIndex: 135
+    star: 1
+    levelMode: 2
+  - levelIndex: 136
+    star: 1
+    levelMode: 0
+  - levelIndex: 137
+    star: 1
+    levelMode: 0
+  - levelIndex: 138
+    star: 1
+    levelMode: 0
+  - levelIndex: 139
+    star: 1
+    levelMode: 1
+  - levelIndex: 140
+    star: 1
+    levelMode: 0
+  - levelIndex: 141
+    star: 1
+    levelMode: 0
+  - levelIndex: 142
+    star: 1
+    levelMode: 1
+  - levelIndex: 143
+    star: 1
+    levelMode: 2
+  - levelIndex: 144
+    star: 1
+    levelMode: 0
+  - levelIndex: 145
+    star: 1
+    levelMode: 0
+  - levelIndex: 146
+    star: 1
+    levelMode: 1
+  - levelIndex: 147
+    star: 1
+    levelMode: 0
+  - levelIndex: 148
+    star: 1
+    levelMode: 1
+  - levelIndex: 149
+    star: 1
+    levelMode: 0
+  - levelIndex: 150
+    star: 1
+    levelMode: 0
+  - levelIndex: 151
+    star: 1
+    levelMode: 0
+  - levelIndex: 152
+    star: 1
+    levelMode: 0
+  - levelIndex: 153
+    star: 1
+    levelMode: 0
+  - levelIndex: 154
+    star: 1
+    levelMode: 0
+  - levelIndex: 155
+    star: 1
+    levelMode: 2
+  - levelIndex: 156
+    star: 1
+    levelMode: 0
+  - levelIndex: 157
+    star: 1
+    levelMode: 0
+  - levelIndex: 158
+    star: 1
+    levelMode: 1
+  - levelIndex: 159
+    star: 1
+    levelMode: 0
+  - levelIndex: 160
+    star: 1
+    levelMode: 1
+  - levelIndex: 161
+    star: 1
+    levelMode: 0
+  - levelIndex: 162
+    star: 1
+    levelMode: 0
+  - levelIndex: 163
+    star: 1
+    levelMode: 2
+  - levelIndex: 164
+    star: 1
+    levelMode: 0
+  - levelIndex: 165
+    star: 1
+    levelMode: 0
+  - levelIndex: 166
+    star: 1
+    levelMode: 0
+  - levelIndex: 167
+    star: 1
+    levelMode: 1
+  - levelIndex: 168
+    star: 1
+    levelMode: 0
+  - levelIndex: 169
+    star: 1
+    levelMode: 0
+  - levelIndex: 170
+    star: 1
+    levelMode: 1
+  - levelIndex: 171
+    star: 1
+    levelMode: 0
+  - levelIndex: 172
+    star: 1
+    levelMode: 2
+  - levelIndex: 173
+    star: 1
+    levelMode: 0
+  - levelIndex: 174
+    star: 1
+    levelMode: 2
+  - levelIndex: 175
+    star: 1
+    levelMode: 0
+  - levelIndex: 176
+    star: 1
+    levelMode: 1
+  - levelIndex: 177
+    star: 1
+    levelMode: 0
+  - levelIndex: 178
+    star: 1
+    levelMode: 2
+  - levelIndex: 179
+    star: 1
+    levelMode: 0
+  - levelIndex: 180
+    star: 1
+    levelMode: 0
+  - levelIndex: 181
+    star: 1
+    levelMode: 2
+  - levelIndex: 182
+    star: 1
+    levelMode: 0
+  - levelIndex: 183
+    star: 1
+    levelMode: 2
+  - levelIndex: 184
+    star: 1
+    levelMode: 0
+  - levelIndex: 185
+    star: 1
+    levelMode: 1
+  - levelIndex: 186
+    star: 1
+    levelMode: 2
+  - levelIndex: 187
+    star: 1
+    levelMode: 0
+  - levelIndex: 188
+    star: 1
+    levelMode: 0
+  - levelIndex: 189
+    star: 1
+    levelMode: 2
+  - levelIndex: 190
+    star: 1
+    levelMode: 0
+  - levelIndex: 191
+    star: 1
+    levelMode: 1
+  - levelIndex: 192
+    star: 1
+    levelMode: 0
+  - levelIndex: 193
+    star: 1
+    levelMode: 1
+  - levelIndex: 194
+    star: 1
+    levelMode: 1
+  - levelIndex: 195
+    star: 1
+    levelMode: 2
+  - levelIndex: 196
+    star: 1
+    levelMode: 0
+  - levelIndex: 197
+    star: 1
+    levelMode: 0
+  - levelIndex: 198
+    star: 1
+    levelMode: 0
+  - levelIndex: 199
+    star: 1
+    levelMode: 0
+  - levelIndex: 200
+    star: 1
+    levelMode: 0
+  - levelIndex: 201
+    star: 1
+    levelMode: 0
+  - levelIndex: 202
+    star: 1
+    levelMode: 1
+  - levelIndex: 203
+    star: 1
+    levelMode: 2
+  - levelIndex: 204
+    star: 1
+    levelMode: 0
+  - levelIndex: 205
+    star: 1
+    levelMode: 0
+  - levelIndex: 206
+    star: 1
+    levelMode: 2
+  - levelIndex: 207
+    star: 1
+    levelMode: 0
+  - levelIndex: 208
+    star: 1
+    levelMode: 2
+  - levelIndex: 209
+    star: 1
+    levelMode: 0
+  - levelIndex: 210
+    star: 1
+    levelMode: 0
+  - levelIndex: 211
+    star: 1
+    levelMode: 0
+  - levelIndex: 212
+    star: 1
+    levelMode: 2
+  - levelIndex: 213
+    star: 1
+    levelMode: 0
+  - levelIndex: 214
+    star: 1
+    levelMode: 1
+  - levelIndex: 215
+    star: 1
+    levelMode: 0
+  - levelIndex: 216
+    star: 1
+    levelMode: 0
+  - levelIndex: 217
+    star: 1
+    levelMode: 0
+  - levelIndex: 218
+    star: 1
+    levelMode: 1
+  - levelIndex: 219
+    star: 1
+    levelMode: 0
+  - levelIndex: 220
+    star: 1
+    levelMode: 1
+  - levelIndex: 221
+    star: 1
+    levelMode: 0
+  - levelIndex: 222
+    star: 1
+    levelMode: 0
+  - levelIndex: 223
+    star: 1
+    levelMode: 1
+  - levelIndex: 224
+    star: 1
+    levelMode: 0
+  - levelIndex: 225
+    star: 1
+    levelMode: 1
+  - levelIndex: 226
+    star: 1
+    levelMode: 0
+  - levelIndex: 227
+    star: 1
+    levelMode: 1
+  - levelIndex: 228
+    star: 1
+    levelMode: 0
+  - levelIndex: 229
+    star: 1
+    levelMode: 0
+  - levelIndex: 230
+    star: 1
+    levelMode: 1
+  - levelIndex: 231
+    star: 1
+    levelMode: 0
+  - levelIndex: 232
+    star: 1
+    levelMode: 2
+  - levelIndex: 233
+    star: 1
+    levelMode: 0
+  - levelIndex: 234
+    star: 1
+    levelMode: 1
+  - levelIndex: 235
+    star: 1
+    levelMode: 0
+  - levelIndex: 236
+    star: 1
+    levelMode: 0
+  - levelIndex: 237
+    star: 1
+    levelMode: 2
+  - levelIndex: 238
+    star: 1
+    levelMode: 0
+  - levelIndex: 239
+    star: 1
+    levelMode: 1
+  - levelIndex: 240
+    star: 1
+    levelMode: 0
+  - levelIndex: 241
+    star: 1
+    levelMode: 2
+  - levelIndex: 242
+    star: 1
+    levelMode: 1
+  - levelIndex: 243
+    star: 1
+    levelMode: 0
+  - levelIndex: 244
+    star: 1
+    levelMode: 2
+  - levelIndex: 245
+    star: 1
+    levelMode: 0
+  - levelIndex: 246
+    star: 1
+    levelMode: 0
+  - levelIndex: 247
+    star: 1
+    levelMode: 2
+  - levelIndex: 248
+    star: 1
+    levelMode: 0
+  - levelIndex: 249
+    star: 1
+    levelMode: 0
+  - levelIndex: 250
+    star: 1
+    levelMode: 0
+  - levelIndex: 251
+    star: 1
+    levelMode: 0
+  - levelIndex: 252
+    star: 1
+    levelMode: 1
+  - levelIndex: 253
+    star: 1
+    levelMode: 0
+  - levelIndex: 254
+    star: 1
+    levelMode: 1
+  - levelIndex: 255
+    star: 1
+    levelMode: 0
+  - levelIndex: 256
+    star: 1
+    levelMode: 2
+  - levelIndex: 257
+    star: 1
+    levelMode: 0
+  - levelIndex: 258
+    star: 1
+    levelMode: 1
+  - levelIndex: 259
+    star: 1
+    levelMode: 0
+  - levelIndex: 260
+    star: 1
+    levelMode: 2
+  - levelIndex: 261
+    star: 1
+    levelMode: 0
+  - levelIndex: 262
+    star: 1
+    levelMode: 0
+  - levelIndex: 263
+    star: 1
+    levelMode: 1
+  - levelIndex: 264
+    star: 1
+    levelMode: 1
+  - levelIndex: 265
+    star: 1
+    levelMode: 0
+  - levelIndex: 266
+    star: 1
+    levelMode: 2
+  - levelIndex: 267
+    star: 1
+    levelMode: 0
+  - levelIndex: 268
+    star: 1
+    levelMode: 1
+  - levelIndex: 269
+    star: 1
+    levelMode: 0
+  - levelIndex: 270
+    star: 1
+    levelMode: 1
+  - levelIndex: 271
+    star: 1
+    levelMode: 0
+  - levelIndex: 272
+    star: 1
+    levelMode: 2
+  - levelIndex: 273
+    star: 1
+    levelMode: 0
+  - levelIndex: 274
+    star: 1
+    levelMode: 1
+  - levelIndex: 275
+    star: 1
+    levelMode: 0
+  - levelIndex: 276
+    star: 1
+    levelMode: 2
+  - levelIndex: 277
+    star: 1
+    levelMode: 1
+  - levelIndex: 278
+    star: 1
+    levelMode: 0
+  - levelIndex: 279
+    star: 1
+    levelMode: 2
+  - levelIndex: 280
+    star: 1
+    levelMode: 0
+  - levelIndex: 281
+    star: 1
+    levelMode: 1
+  - levelIndex: 282
+    star: 1
+    levelMode: 0
+  - levelIndex: 283
+    star: 1
+    levelMode: 1
+  - levelIndex: 284
+    star: 1
+    levelMode: 0
+  - levelIndex: 285
+    star: 1
+    levelMode: 2
+  - levelIndex: 286
+    star: 1
+    levelMode: 1
+  - levelIndex: 287
+    star: 1
+    levelMode: 0
+  - levelIndex: 288
+    star: 1
+    levelMode: 1
+  - levelIndex: 289
+    star: 1
+    levelMode: 0
+  - levelIndex: 290
+    star: 1
+    levelMode: 2
+  - levelIndex: 291
+    star: 1
+    levelMode: 0
+  - levelIndex: 292
+    star: 1
+    levelMode: 2
+  - levelIndex: 293
+    star: 1
+    levelMode: 0
+  - levelIndex: 294
+    star: 1
+    levelMode: 0
+  - levelIndex: 295
+    star: 1
+    levelMode: 1
+  - levelIndex: 296
+    star: 1
+    levelMode: 0
+  - levelIndex: 297
+    star: 1
+    levelMode: 2
+  - levelIndex: 298
+    star: 1
+    levelMode: 0
+  - levelIndex: 299
+    star: 1
+    levelMode: 0
+  - levelIndex: 300
+    star: 1
+    levelMode: 0
+  - levelIndex: 301
+    star: 1
+    levelMode: 0
+  - levelIndex: 302
+    star: 1
+    levelMode: 1
+  - levelIndex: 303
+    star: 1
+    levelMode: 0
+  - levelIndex: 304
+    star: 1
+    levelMode: 2
+  - levelIndex: 305
+    star: 1
+    levelMode: 0
+  - levelIndex: 306
+    star: 1
+    levelMode: 1
+  - levelIndex: 307
+    star: 1
+    levelMode: 0
+  - levelIndex: 308
+    star: 1
+    levelMode: 1
+  - levelIndex: 309
+    star: 1
+    levelMode: 0
+  - levelIndex: 310
+    star: 1
+    levelMode: 2
+  - levelIndex: 311
+    star: 1
+    levelMode: 0
+  - levelIndex: 312
+    star: 1
+    levelMode: 2
+  - levelIndex: 313
+    star: 1
+    levelMode: 0
+  - levelIndex: 314
+    star: 1
+    levelMode: 1
+  - levelIndex: 315
+    star: 1
+    levelMode: 0
+  - levelIndex: 316
+    star: 1
+    levelMode: 2
+  - levelIndex: 317
+    star: 1
+    levelMode: 0
+  - levelIndex: 318
+    star: 1
+    levelMode: 0
+  - levelIndex: 319
+    star: 1
+    levelMode: 2
+  - levelIndex: 320
+    star: 1
+    levelMode: 0
+  - levelIndex: 321
+    star: 1
+    levelMode: 1
+  - levelIndex: 322
+    star: 1
+    levelMode: 2
+  - levelIndex: 323
+    star: 1
+    levelMode: 0
+  - levelIndex: 324
+    star: 1
+    levelMode: 1
+  - levelIndex: 325
+    star: 1
+    levelMode: 0
+  - levelIndex: 326
+    star: 1
+    levelMode: 2
+  - levelIndex: 327
+    star: 1
+    levelMode: 0
+  - levelIndex: 328
+    star: 1
+    levelMode: 1
+  - levelIndex: 329
+    star: 1
+    levelMode: 0
+  - levelIndex: 330
+    star: 1
+    levelMode: 0
+  - levelIndex: 331
+    star: 1
+    levelMode: 2
+  - levelIndex: 332
+    star: 1
+    levelMode: 0
+  - levelIndex: 334
+    star: 1
+    levelMode: 1
+  - levelIndex: 335
+    star: 1
+    levelMode: 0
+  - levelIndex: 336
+    star: 1
+    levelMode: 2
+  - levelIndex: 337
+    star: 1
+    levelMode: 0
+  - levelIndex: 338
+    star: 1
+    levelMode: 0
+  - levelIndex: 339
+    star: 1
+    levelMode: 1
+  - levelIndex: 340
+    star: 1
+    levelMode: 0
+  - levelIndex: 341
+    star: 1
+    levelMode: 0
+  - levelIndex: 342
+    star: 1
+    levelMode: 2
+  - levelIndex: 343
+    star: 1
+    levelMode: 0
+  - levelIndex: 344
+    star: 1
+    levelMode: 0
+  - levelIndex: 345
+    star: 1
+    levelMode: 1
+  - levelIndex: 346
+    star: 1
+    levelMode: 0
+  - levelIndex: 347
+    star: 1
+    levelMode: 2
+  - levelIndex: 348
+    star: 1
+    levelMode: 0
+  - levelIndex: 349
+    star: 1
+    levelMode: 0
+  - levelIndex: 350
+    star: 1
+    levelMode: 1
+  - levelIndex: 351
+    star: 1
+    levelMode: 0
+  - levelIndex: 352
+    star: 1
+    levelMode: 2
+  - levelIndex: 353
+    star: 1
+    levelMode: 0
+  - levelIndex: 354
+    star: 1
+    levelMode: 0
+  - levelIndex: 355
+    star: 1
+    levelMode: 1
+  - levelIndex: 356
+    star: 1
+    levelMode: 0
+  - levelIndex: 357
+    star: 1
+    levelMode: 2
+  - levelIndex: 358
+    star: 1
+    levelMode: 0
+  - levelIndex: 359
+    star: 1
+    levelMode: 1
+  - levelIndex: 360
+    star: 1
+    levelMode: 0
+  - levelIndex: 361
+    star: 1
+    levelMode: 2
+  - levelIndex: 362
+    star: 1
+    levelMode: 0
+  - levelIndex: 363
+    star: 1
+    levelMode: 2
+  - levelIndex: 364
+    star: 1
+    levelMode: 0
+  - levelIndex: 365
+    star: 1
+    levelMode: 2
+  - levelIndex: 366
+    star: 1
+    levelMode: 0
+  - levelIndex: 367
+    star: 1
+    levelMode: 1
+  - levelIndex: 368
+    star: 1
+    levelMode: 0
+  - levelIndex: 369
+    star: 1
+    levelMode: 2
+  - levelIndex: 370
+    star: 1
+    levelMode: 0
+  - levelIndex: 371
+    star: 1
+    levelMode: 1
+  - levelIndex: 372
+    star: 1
+    levelMode: 0
+  - levelIndex: 373
+    star: 1
+    levelMode: 2
+  - levelIndex: 374
+    star: 1
+    levelMode: 0
+  - levelIndex: 375
+    star: 1
+    levelMode: 1
+  - levelIndex: 376
+    star: 1
+    levelMode: 0
+  - levelIndex: 377
+    star: 1
+    levelMode: 1
+  - levelIndex: 378
+    star: 1
+    levelMode: 0
+  - levelIndex: 379
+    star: 1
+    levelMode: 0
+  - levelIndex: 380
+    star: 1
+    levelMode: 0
+  currentLevel: {fileID: 11400000, guid: 9ea094eb88b77864dad437774ae57775, type: 2}

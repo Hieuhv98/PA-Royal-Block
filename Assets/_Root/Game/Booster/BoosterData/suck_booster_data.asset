@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf19c589ca93dc498c765841a312fc9, type: 3}
+  m_Name: suck_booster_data
+  m_EditorClassIdentifier: 
+  iD: suck_booster_data
+  isShowGuid: 1
+  elementType: 2
+  boosterNameSprite: {fileID: 21300000, guid: 92845b57546a63245845ee1c5fe89619, type: 3}
+  boosterIconBuy: {fileID: 21300000, guid: e1d305a412711b2458f94fb30f68598d, type: 3}
+  priceBuyBooster: 500
+  boosterIconGuid: {fileID: 21300000, guid: 96235c6826d5f8f42aa0658f1f488ced, type: 3}
+  boosterBuyDescription: Clear all blocks of the selected color
+  boosterDescription: Clear all blocks of this color
+  boosterName: MAGNET
+  defaultValue: 2
+  timeCoolDown: 1.85
+  balanceAmount: {fileID: 11400000, guid: 2591b43509b38fe44bbf249aa79dbc43, type: 2}
+  levelModeData: {fileID: 11400000, guid: 93fbbc585de0de849a3391b3a80a510d, type: 2}
+  boosterManager: {fileID: 11400000, guid: 5d8985fdcef44324798754653572167a, type: 2}
+  boosterDataRelatives:
+  - {fileID: 11400000, guid: 6f0ae9b8b3d66744ea12a299e23ccbba, type: 2}
+  unlockNewElementData: {fileID: 11400000, guid: 9157423568f950947bffc463512028d3,
+    type: 2}
+  currentLevel: {fileID: 11400000, guid: 9ea094eb88b77864dad437774ae57775, type: 2}
+  levelUnlock: 14
+  amountBoosterCanBuy: 1
+  amountBoosterCanAddWatchAds: 1
+  playSfxEvent: {fileID: 11400000, guid: f8b47f732f214a74ea2758c176b166be, type: 2}
+  stopSfxEvent: {fileID: 11400000, guid: 0564f5531abebe04b9d39a76ae921750, type: 2}
+  soundStartUseBooster: {fileID: 0}
+  soundBoosterComplete: {fileID: 0}
+  resourceName: 4
+  useBoosterMissionCount: {fileID: 11400000, guid: 928432d103231b6479487aeafec97bbb,
+    type: 2}
+  onStartSuckBoosterEvent: {fileID: 11400000, guid: 1d3957dcc5608c745b982260a085790f,
+    type: 2}
+  onDoSuckBoosterEvent: {fileID: 11400000, guid: 36bcc8cba9c613648a2fcdfd52924a9d,
+    type: 2}
+  timeMoveEachObject: 0.35
+  timeDelayEachObject: 0.15
+  boosterAnimation: {fileID: 2528372631932631910, guid: b80abd12b802f9d4598e84e64494c006,
+    type: 3}
+  timeDelayUse: 1.25
+  offsetBoosterAnimationSpawn: {x: 0, y: -2, z: -3}
+  headOffset: {x: 0, y: 4, z: 3}
+  soundUsing: {fileID: 11400000, guid: a3fc5adaebbfa0c40b1b59b438032519, type: 2}

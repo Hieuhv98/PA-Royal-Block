@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeab960a47615df43ae068f0503113f3, type: 3}
+  m_Name: booster_pause_time_data
+  m_EditorClassIdentifier: 
+  iD: booster_pause_time_data
+  isShowGuid: 0
+  elementType: 0
+  boosterNameSprite: {fileID: 21300000, guid: 47cac8c4a97034f42b1ac8dba7e196d0, type: 3}
+  boosterIconBuy: {fileID: 21300000, guid: 5d9564313386ced4293dadfcae3ed6e4, type: 3}
+  priceBuyBooster: 300
+  boosterIconGuid: {fileID: 21300000, guid: dc1d633553b57204eb2b4e1949d9ae5a, type: 3}
+  boosterBuyDescription: Freeze time for 15 seconds
+  boosterDescription: 
+  boosterName: TIME FREEZE
+  defaultValue: 2
+  timeCoolDown: 15
+  balanceAmount: {fileID: 11400000, guid: 3b6a83b440fcd444db8987ace5123021, type: 2}
+  levelModeData: {fileID: 11400000, guid: 93fbbc585de0de849a3391b3a80a510d, type: 2}
+  boosterManager: {fileID: 11400000, guid: 5d8985fdcef44324798754653572167a, type: 2}
+  boosterDataRelatives: []
+  unlockNewElementData: {fileID: 11400000, guid: 9157423568f950947bffc463512028d3,
+    type: 2}
+  currentLevel: {fileID: 11400000, guid: 9ea094eb88b77864dad437774ae57775, type: 2}
+  levelUnlock: 6
+  amountBoosterCanBuy: 1
+  amountBoosterCanAddWatchAds: 1
+  playSfxEvent: {fileID: 11400000, guid: f8b47f732f214a74ea2758c176b166be, type: 2}
+  stopSfxEvent: {fileID: 11400000, guid: 0564f5531abebe04b9d39a76ae921750, type: 2}
+  soundStartUseBooster: {fileID: 0}
+  soundBoosterComplete: {fileID: 0}
+  resourceName: 3
+  useBoosterMissionCount: {fileID: 11400000, guid: 928432d103231b6479487aeafec97bbb,
+    type: 2}
+  pauseTimeLevelVariable: {fileID: 11400000, guid: 37bc5d9ab1d150b47a26ab586f278c5c,
+    type: 2}
+  startCountDownTimeEvent: {fileID: 11400000, guid: a93eaa2fa6c235b46af6d78c3c518ee9,
+    type: 2}
+  totalTimeAddWhenPlay: {fileID: 11400000, guid: 061412cc2dac4734faee8ac413c75fe7,
+    type: 2}
+  isUsingTimerBooster: {fileID: 11400000, guid: a29b6f30e7c8c3e4aa14871914fc3ce8,
+    type: 2}

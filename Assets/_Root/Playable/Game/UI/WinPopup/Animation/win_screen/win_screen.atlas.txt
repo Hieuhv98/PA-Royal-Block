@@ -1,0 +1,13 @@
+win_screen.png
+size:1180,488
+filter:Linear,Linear
+pma:true
+scale:0.75
+decor1
+bounds:372,2,342,785
+rotate:90
+decor3
+bounds:372,346,806,137
+decor4
+bounds:2,110,373,368
+rotate:90

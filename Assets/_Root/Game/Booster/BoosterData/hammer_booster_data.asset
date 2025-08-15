@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5880c9adb7177e749a50037d807f6d63, type: 3}
+  m_Name: hammer_booster_data
+  m_EditorClassIdentifier: 
+  iD: hammer_booster_data
+  isShowGuid: 1
+  elementType: 1
+  boosterNameSprite: {fileID: 21300000, guid: 2f55b7f22fcd6934e93f2dd81f574782, type: 3}
+  boosterIconBuy: {fileID: 21300000, guid: 025c719839686564a83dca5c47f2527c, type: 3}
+  priceBuyBooster: 400
+  boosterIconGuid: {fileID: 21300000, guid: 96f87e8ce349ba648834ec4fd4630223, type: 3}
+  boosterBuyDescription: Clear a block or remove an obstacle layer
+  boosterDescription: ' Clear a block or its layer'
+  boosterName: HAMMER
+  defaultValue: 2
+  timeCoolDown: 0.75
+  balanceAmount: {fileID: 11400000, guid: 64e1c64ef67973a43bfb0c096ce27f8c, type: 2}
+  levelModeData: {fileID: 11400000, guid: 93fbbc585de0de849a3391b3a80a510d, type: 2}
+  boosterManager: {fileID: 11400000, guid: 5d8985fdcef44324798754653572167a, type: 2}
+  boosterDataRelatives:
+  - {fileID: 11400000, guid: 95b07bf18daec7a4787f1ecf53f12207, type: 2}
+  unlockNewElementData: {fileID: 11400000, guid: 9157423568f950947bffc463512028d3,
+    type: 2}
+  currentLevel: {fileID: 11400000, guid: 9ea094eb88b77864dad437774ae57775, type: 2}
+  levelUnlock: 10
+  amountBoosterCanBuy: 1
+  amountBoosterCanAddWatchAds: 1
+  playSfxEvent: {fileID: 11400000, guid: f8b47f732f214a74ea2758c176b166be, type: 2}
+  stopSfxEvent: {fileID: 11400000, guid: 0564f5531abebe04b9d39a76ae921750, type: 2}
+  soundStartUseBooster: {fileID: 0}
+  soundBoosterComplete: {fileID: 11400000, guid: 78830980b16df4b47bfb9036f3744e38,
+    type: 2}
+  resourceName: 5
+  useBoosterMissionCount: {fileID: 11400000, guid: 928432d103231b6479487aeafec97bbb,
+    type: 2}
+  onStartHammerBoosterEvent: {fileID: 11400000, guid: 587ef4c6bdaf30a4fb149efb58226125,
+    type: 2}
+  onDoHammerBoosterEvent: {fileID: 11400000, guid: c4409e3ac4446b640b66b553b530154c,
+    type: 2}
+  offsetBoosterAnimationSpawn: {x: 0, y: -1, z: -2}
+  boosterAnimation: {fileID: 2528372631932631910, guid: a9f457e834d2f4348aa24763c980dd5d,
+    type: 3}

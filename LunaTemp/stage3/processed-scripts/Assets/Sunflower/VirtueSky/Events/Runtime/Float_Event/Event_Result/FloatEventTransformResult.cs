@@ -1,0 +1,10 @@
+using UnityEngine;
+
+namespace VirtueSky.Events
+{
+    [CreateAssetMenu(menuName = "Sunflower/Scriptable/Event-Result/Float Event/Transform Result",
+        fileName = "float_event_transform_result")]
+    public class FloatEventTransformResult : BaseEvent<float, Transform>
+    {
+    }
+}

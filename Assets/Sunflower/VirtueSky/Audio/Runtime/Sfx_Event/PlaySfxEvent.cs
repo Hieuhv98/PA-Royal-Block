@@ -1,0 +1,10 @@
+using UnityEngine;
+using VirtueSky.Events;
+
+namespace VirtueSky.Audio
+{
+    [CreateAssetMenu(menuName = "Sunflower/Audio/Sfx Event/Play Sfx Event", fileName = "play_sfx_event")]
+    public class PlaySfxEvent : BaseEvent<SoundData, SoundCache>
+    {
+    }
+}

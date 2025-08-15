@@ -1,0 +1,6 @@
+hand_tut.png
+size:308,308
+filter:Linear,Linear
+pma:true
+Layer 2
+bounds:2,2,292,302

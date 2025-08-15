@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc957bf9227ea649b6b8e932da31ae8, type: 3}
+  m_Name: level_type_data
+  m_EditorClassIdentifier: 
+  levelTypeInfors:
+  - LevelMode: 0
+    colorTextGameplay: {fileID: 2100000, guid: a542b8816c65b4540a8d3fce83b22f65, type: 2}
+    colorTextHome: {fileID: 2100000, guid: f5c9168cd9f291a4eb7570392182a3e9, type: 2}
+    iconReplay: {fileID: 21300000, guid: 5257a67204173854dbe3ed5f27841abd, type: 3}
+    iconBoardLevel: {fileID: 21300000, guid: 1e67e550698e52c429af1811cb8e77f9, type: 3}
+    iconSetting: {fileID: 21300000, guid: 0890c949123deb84c98ba691c3b12b78, type: 3}
+    boosterIconDatas:
+    - elementType: 0
+      icon: {fileID: 21300000, guid: 0780706d5a15ab14eb232c8bce07841f, type: 3}
+      iconLock: {fileID: 21300000, guid: acdd4dea3b2e5f946b185e3ceba2b7d1, type: 3}
+    - elementType: 1
+      icon: {fileID: 21300000, guid: 24ee033dab49f92408bc7660be3b077b, type: 3}
+      iconLock: {fileID: 21300000, guid: acdd4dea3b2e5f946b185e3ceba2b7d1, type: 3}
+    - elementType: 2
+      icon: {fileID: 21300000, guid: 1476e0ddb1582864480f1390041fd0a0, type: 3}
+      iconLock: {fileID: 21300000, guid: acdd4dea3b2e5f946b185e3ceba2b7d1, type: 3}
+    icon: {fileID: 21300000, guid: a7125578a94bab04dbe7ad06ba93bf6c, type: 3}
+    iconBoardGameplay: {fileID: 21300000, guid: c3242d2cebdd0504db18bcc851100446,
+      type: 3}
+    description: Easy
+    soundStartGame: {fileID: 0}
+    coinBonus: 20
+  - LevelMode: 1
+    colorTextGameplay: {fileID: 2100000, guid: 37a4b5a61654a824aaf191db66e68944, type: 2}
+    colorTextHome: {fileID: 2100000, guid: 37a4b5a61654a824aaf191db66e68944, type: 2}
+    iconReplay: {fileID: 21300000, guid: dbb8808f904ae7042b04f51e57a9d443, type: 3}
+    iconBoardLevel: {fileID: 21300000, guid: 75d796debdd5d9742a67ccb7f1f3fc66, type: 3}
+    iconSetting: {fileID: 21300000, guid: 88f63b17575d1f842af23297f160df91, type: 3}
+    boosterIconDatas:
+    - elementType: 0
+      icon: {fileID: 21300000, guid: d7899f80f5971f6428dc85e2dc117593, type: 3}
+      iconLock: {fileID: 21300000, guid: e102d4237908e9a439c05650a02b72f1, type: 3}
+    - elementType: 1
+      icon: {fileID: 21300000, guid: 77f9d39bf59b0d642b1c089b2e4e3212, type: 3}
+      iconLock: {fileID: 21300000, guid: e102d4237908e9a439c05650a02b72f1, type: 3}
+    - elementType: 2
+      icon: {fileID: 21300000, guid: 192f48043acba6c43ad5ff00ec69238c, type: 3}
+      iconLock: {fileID: 21300000, guid: e102d4237908e9a439c05650a02b72f1, type: 3}
+    icon: {fileID: 21300000, guid: 505b703bba8154e43bb3d73c5ca5e74c, type: 3}
+    iconBoardGameplay: {fileID: 21300000, guid: 4e778c53dd001cc46a224bb1b9ee9576,
+      type: 3}
+    description: Hard
+    soundStartGame: {fileID: 0}
+    coinBonus: 30
+  - LevelMode: 2
+    colorTextGameplay: {fileID: 2100000, guid: 6e3ad658480d3794c92efa96dbb22b19, type: 2}
+    colorTextHome: {fileID: 2100000, guid: 6e3ad658480d3794c92efa96dbb22b19, type: 2}
+    iconReplay: {fileID: 21300000, guid: 9de56c1c754cbaa4c8536729f3b87e55, type: 3}
+    iconBoardLevel: {fileID: 21300000, guid: b969909ac27b1a24eb4253f0fc6b2f60, type: 3}
+    iconSetting: {fileID: 21300000, guid: a0a57af25e6fb064180658cbda267ebb, type: 3}
+    boosterIconDatas:
+    - elementType: 0
+      icon: {fileID: 21300000, guid: f7b07d6409791e24d917a17308c53289, type: 3}
+      iconLock: {fileID: 21300000, guid: 9a3926c61bcac1143a63f41d3c447aa3, type: 3}
+    - elementType: 1
+      icon: {fileID: 21300000, guid: 9152d4aca95a5464abaae22956a64ece, type: 3}
+      iconLock: {fileID: 21300000, guid: 9a3926c61bcac1143a63f41d3c447aa3, type: 3}
+    - elementType: 2
+      icon: {fileID: 21300000, guid: a59205c406f9b9f41bc285cc515b683b, type: 3}
+      iconLock: {fileID: 21300000, guid: 9a3926c61bcac1143a63f41d3c447aa3, type: 3}
+    icon: {fileID: 21300000, guid: 97a7cbb489d9abf4d8e05c1430ec5296, type: 3}
+    iconBoardGameplay: {fileID: 21300000, guid: b87a5c9b32b3d2d4eb6d3e5a6e7e11ff,
+      type: 3}
+    description: Very Hard
+    soundStartGame: {fileID: 11400000, guid: b77c2a4727420794b93091913aa82c5e, type: 2}
+    coinBonus: 40

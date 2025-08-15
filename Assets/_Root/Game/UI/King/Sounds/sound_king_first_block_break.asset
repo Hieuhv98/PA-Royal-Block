@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474a3bbd13954ce3abb782ceec59e692, type: 3}
+  m_Name: sound_king_first_block_break
+  m_EditorClassIdentifier: 
+  description: 
+  loop: 0
+  volume: 1
+  isMusicFadeVolume: 0
+  fadeInDuration: 0.5
+  fadeOutDuration: 0.5
+  audioClips:
+  - {fileID: 8300000, guid: f559592d6a5194d459c0aa908a482c7b, type: 3}
+  - {fileID: 8300000, guid: 1448fb7147b88d34f83428126b024114, type: 3}
+  - {fileID: 8300000, guid: 64f37b1f5b88037428f43fedd947e178, type: 3}
+  - {fileID: 8300000, guid: fc93496f05cb6bf479231690ebf954b8, type: 3}

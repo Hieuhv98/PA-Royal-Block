@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3273f27f633f8440be45dc4ef907619, type: 3}
+  m_Name: booster_manager
+  m_EditorClassIdentifier: 
+  boosterDatas:
+  - {fileID: 11400000, guid: 4c357f8956459ad46bf87444eb662081, type: 2}
+  - {fileID: 11400000, guid: 6f0ae9b8b3d66744ea12a299e23ccbba, type: 2}
+  - {fileID: 11400000, guid: 95b07bf18daec7a4787f1ecf53f12207, type: 2}
+  onClickContinueUnlockNewElementEvent: {fileID: 11400000, guid: 265154c367745324f90302b4cc45d753,
+    type: 2}
+  trackingResourceEarnAnalytics: {fileID: 11400000, guid: 35c0b8e1fc1f80744a9f2645baa8f2ac,
+    type: 2}
+  currentUsingBooster: {fileID: 0}

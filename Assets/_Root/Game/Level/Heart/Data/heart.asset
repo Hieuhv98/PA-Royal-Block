@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b34a00424caef4a45b4c828a82d4d242, type: 3}
+  m_Name: heart
+  m_EditorClassIdentifier: 
+  immortalData: {fileID: 11400000, guid: 9d350bc3149e1c24490b199309c3378e, type: 2}
+  id: heart
+  max: 5
+  updateHeartEvent: {fileID: 11400000, guid: 165c780950d5994409670d7942806da1, type: 2}
+  balanceAmount: {fileID: 11400000, guid: 8e279a0a546f21a488392c58ab6bb27f, type: 2}
+  countIncrease: 1
+  timeIncrease: 1799
