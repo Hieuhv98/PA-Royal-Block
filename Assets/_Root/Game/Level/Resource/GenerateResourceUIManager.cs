@@ -53,11 +53,13 @@ public class GenerateResourceUIManager : BaseMono
 
         transform.parent = transform.parent.parent;
     }
+
     public override void OnEnable()
     {
         base.OnEnable();
         Refresh();
     }
+
     void Refresh()
     {
         resourceValue.ResetValue();
@@ -74,16 +76,16 @@ public class GenerateResourceUIManager : BaseMono
     }
 
     int count = 0;
-    void OnCreateResourcesEvent((Camera camera, List<ResourcePrefab> listGameObject, Action actionStart, Action actionComplete) info)
+    void OnCreateResourcesEvent(ResourceEventData info)
     {
         _delayHandleRunning.Kill();
-        var listGameObject = new List<ResourcePrefab>(info.listGameObject);
+        var listGameObject = new List<ResourcePrefab>(info.listObject);
         _listObjectCache.AddRange(listGameObject);
         count++;
         var delayHandle = DOVirtual.DelayedCall(timeMoveDelay, () =>
         {
             var count = listGameObject.Count;
-            info.actionStart?.Invoke();
+            if (info.actionStart != null) info.actionStart();
             float timeMoveOneWay = (timeMove - (count - 1) * timeMoveWait) / count;
 
             int i = 0;
@@ -120,11 +122,14 @@ public class GenerateResourceUIManager : BaseMono
             var timeMoveFirst = Mathf.Max(timeMoveFirstComplete - preCompleteOffsetTime, 0.25f);
             var delayHandlePreComplete = DOVirtual.DelayedCall(timeMoveFirst, () =>
             {
-                playSfxEvent?.Raise(soundMoveComplete);
+                if (playSfxEvent != null) playSfxEvent.Raise(soundMoveComplete);
             });
             _listDelayHandlePreComplete.Add(delayHandlePreComplete);
 
-            var delayHandleComplete = DOVirtual.DelayedCall(timeMove, () => { info.actionComplete?.Invoke(); });
+            var delayHandleComplete = DOVirtual.DelayedCall(timeMove, () =>
+            {
+                if (info.actionComplete != null) info.actionComplete();
+            });
             _listDelayHandleComplete.Add(delayHandleComplete);
         });
 

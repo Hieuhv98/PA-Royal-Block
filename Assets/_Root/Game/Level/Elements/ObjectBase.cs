@@ -20,20 +20,20 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
     [SerializeField] private BooleanVariable isStarttingLevel;
     [SerializeField] private List<Collider> listColliders = new List<Collider>();
 
-    [Header("Color")] [SerializeField] protected EColorType eColorType;
+    [Header("Color")][SerializeField] protected EColorType eColorType;
     [SerializeField] protected ColorConfig colorConfig;
     [SerializeField] string path = "Assets/_Root/Game/Level/Elements/Renders";
     [SerializeField] protected string colorMaterialName = "_Color";
 
-    [Header("Pivot")] [SerializeField] private EPivotType pivotType;
+    [Header("Pivot")][SerializeField] private EPivotType pivotType;
     [SerializeField] protected GameObject model;
     [SerializeField] protected float yAxis = 0;
 
-    [Header("Texture")] [SerializeField] private bool isHaveStar;
+    [Header("Texture")][SerializeField] private bool isHaveStar;
     [SerializeField] private ObjectStar objectStarPrefab;
     [SerializeField] private ObjectStar objectStar;
 
-    [Header("Freeze")] [SerializeField] protected bool isFreeze;
+    [Header("Freeze")][SerializeField] protected bool isFreeze;
 
     [SerializeField]
     private int freezeCount = 5;
@@ -48,11 +48,11 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
     public virtual bool IsCanMove => IsAlive && !IsFrezering;
     public bool IsHaveStar => isHaveStar;
     public Vector2 Size => GetSize();
-    public List<Collider> ListColliders 
+    public List<Collider> ListColliders
     {
-        get 
+        get
         {
-            if(listColliders.Count == 0) listColliders = model.GetComponentsInChildren<Collider>().ToList();
+            if (listColliders.Count == 0) listColliders = model.GetComponentsInChildren<Collider>().ToList();
             return listColliders;
         }
     }
@@ -64,21 +64,46 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
     public GameObject Model => model;
 
     private Renderer _renderer;
-    public Renderer Renderer => _renderer ??= model.GetComponentInChildren<Renderer>();
+    public Renderer Renderer
+    {
+        get
+        {
+            if (_renderer == null)
+            {
+                _renderer = model.GetComponentInChildren<Renderer>();
+            }
+            return _renderer;
+        }
+    }
 
     private MeshFilter _meshFilter;
-    public MeshFilter MeshFilter => _meshFilter ?? model.GetComponentInChildren<MeshFilter>();
+    public MeshFilter MeshFilter
+    {
+        get
+        {
+            if (_meshFilter == null)
+            {
+                _meshFilter = model.GetComponentInChildren<MeshFilter>();
+            }
+            return _meshFilter;
+        }
+    }
 
     protected Vector2 GetSize()
     {
-        return eRotationType switch
+        switch (eRotationType)
         {
-            ERotationType.RIGHT => new Vector2(size.x, size.z),
-            ERotationType.LEFT => new Vector2(size.x, size.z),
-            ERotationType.UP => new Vector2(size.z, size.x),
-            ERotationType.DOWN => new Vector2(size.z, size.x),
-            _ => new Vector2(size.x, size.z)
-        };
+            case ERotationType.RIGHT:
+                return new Vector2(size.x, size.z);
+            case ERotationType.LEFT:
+                return new Vector2(size.x, size.z);
+            case ERotationType.UP:
+                return new Vector2(size.z, size.x);
+            case ERotationType.DOWN:
+                return new Vector2(size.z, size.x);
+            default:
+                return new Vector2(size.x, size.z);
+        }
     }
 
     public virtual void Awake()
@@ -116,26 +141,36 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
 
     public float GetWidth(EDirectionType eDirection, Vector2 size)
     {
-        return eDirection switch
+        switch (eDirection)
         {
-            EDirectionType.UP => size.x,
-            EDirectionType.DOWN => size.x,
-            EDirectionType.LEFT => size.y,
-            EDirectionType.RIGHT => size.y,
-            _ => 0
-        };
+            case EDirectionType.UP:
+                return size.x;
+            case EDirectionType.DOWN:
+                return size.x;
+            case EDirectionType.LEFT:
+                return size.y;
+            case EDirectionType.RIGHT:
+                return size.y;
+            default:
+                return 0;
+        }
     }
 
     public float GetHeight(EDirectionType eDirection, Vector2 size)
     {
-        return eDirection switch
+        switch (eDirection)
         {
-            EDirectionType.UP => size.y,
-            EDirectionType.DOWN => size.y,
-            EDirectionType.LEFT => size.x,
-            EDirectionType.RIGHT => size.x,
-            _ => 0
-        };
+            case EDirectionType.UP:
+                return size.y;
+            case EDirectionType.DOWN:
+                return size.y;
+            case EDirectionType.LEFT:
+                return size.x;
+            case EDirectionType.RIGHT:
+                return size.x;
+            default:
+                return 0;
+        }
     }
 
     public void ChangeColorType(EColorType eColorTypeChange, Material materialChange)
@@ -143,14 +178,12 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
         eColorType = eColorTypeChange;
         materialCurrent = materialChange;
         Renderer.material = materialCurrent;
-        //Renderer.material.color = colorConfig.GetColor(eColorTypeChange);
     }
 
     public void ChangeMesh(Mesh mesh)
     {
         if (MeshFilter) MeshFilter.mesh = mesh;
     }
-
 
 #if UNITY_EDITOR
     protected virtual void OnEnableInEditor()
@@ -210,7 +243,6 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
     }
 #endif
 
-
     protected void UpdateRotation()
     {
         if (model) model.transform.localEulerAngles = new Vector3(model.transform.localEulerAngles.x, GetYAngle(), model.transform.localEulerAngles.z);
@@ -218,14 +250,19 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
 
     float GetYAngle()
     {
-        return eRotationType switch
+        switch (eRotationType)
         {
-            ERotationType.RIGHT => 0,
-            ERotationType.UP => 90,
-            ERotationType.LEFT => 180,
-            ERotationType.DOWN => 270,
-            _ => 0,
-        };
+            case ERotationType.RIGHT:
+                return 0;
+            case ERotationType.UP:
+                return 90;
+            case ERotationType.LEFT:
+                return 180;
+            case ERotationType.DOWN:
+                return 270;
+            default:
+                return 0;
+        }
     }
 
     public void SetPosition(Vector3 position)
@@ -259,7 +296,6 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
                     var assetPath = $"{path}/{materialAssetName}";
                     var newMaterial = new Material(renderer.material);
                     newMaterial = renderer.material;
-                    //newMaterial.SetColor(colorMaterialName, dataColor.Color);
                     AssetDatabase.CreateAsset(newMaterial, assetPath);
                     renderer.material = newMaterial;
                     materialCurrent = newMaterial;
@@ -279,7 +315,6 @@ public abstract class ObjectBase : BaseMono, IObject, IFreezer
         }
 
         var newMaterial = AssetDatabase.LoadAssetAtPath<Material>(assetPath);
-        //newMaterial.SetColor(colorMaterialName, colorData.Color);
         return newMaterial;
     }
 

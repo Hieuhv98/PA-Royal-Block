@@ -30,7 +30,6 @@ public enum Direction
     DownLeft
 }
 
-
 public class GridCreator
 {
     public GridSystem Create(Transform parent, GridType gridType, AxisType axisType, GridSetting setting, Vector2 size, bool createAsPrefab, Vector2 sizeActive)
@@ -41,16 +40,16 @@ public class GridCreator
         var gridSystem = new GameObject
         {
             transform =
-                {
-                    name = $"Grid {gridType} [{sizeActive.x},{sizeActive.y}]"
-                }
+            {
+                name = $"Grid {gridType} [{sizeActive.x},{sizeActive.y}]"
+            }
         }.AddComponent<GridSystem>();
         gridSystem.transform.SetParent(parent);
 
         //Bounds
         var delX = size.x - sizeActive.x;
         var delY = size.y - sizeActive.y;
-        var hBoundMin = Mathf.FloorToInt(delX/ 2);
+        var hBoundMin = Mathf.FloorToInt(delX / 2);
         var hBoundMax = size.x - (delX - hBoundMin);
 
         var vBoundMin = Mathf.FloorToInt(delY / 2);
@@ -92,7 +91,8 @@ public class GridCreator
                 cell.transform.name = $"cell [{horizontal},{vertical}]";
                 cell.coordinate = coordinate;
                 cell.transform.SetParent(gridSystem.transform);
-                if(!(horizontal >= hBoundMin && horizontal < hBoundMax && vertical >= vBoundMin && vertical < vBoundMax)) cellsActive.Add(cell);
+                if (!(horizontal >= hBoundMin && horizontal < hBoundMax && vertical >= vBoundMin && vertical < vBoundMax))
+                    cellsActive.Add(cell);
                 cells.Add(cell);
             }
         }
@@ -100,33 +100,38 @@ public class GridCreator
         gridSystem.SetCells(cells);
         SetNeighbor(gridSystem, gridType);
         SetCenter(gridSystem.gameObject);
-        foreach(var cell in cellsActive) cell.gameObject.SetActive(false);
+        foreach (var cell in cellsActive) cell.gameObject.SetActive(false);
 
         return gridSystem;
     }
 
     private CellGrid GetPrefab(GridType gridType, GridSetting cellSetting)
     {
-        return gridType switch
+        switch (gridType)
         {
-            GridType.Rectangle => cellSetting.rectangle.prefab,
-            GridType.Hexagon => cellSetting.hexagon.prefab,
-            _ => null
-        };
+            case GridType.Rectangle:
+                return cellSetting.rectangle.prefab;
+            case GridType.Hexagon:
+                return cellSetting.hexagon.prefab;
+            default:
+                return null;
+        }
     }
 
     private Vector2 GetDistance(GridType gridType, GridSetting cellSetting)
     {
-        return gridType switch
+        switch (gridType)
         {
-            GridType.Rectangle => cellSetting.rectangle.Size,
-            GridType.Hexagon => cellSetting.hexagon.Size,
-            _ => Vector2Int.zero
-        };
+            case GridType.Rectangle:
+                return cellSetting.rectangle.Size;
+            case GridType.Hexagon:
+                return cellSetting.hexagon.Size;
+            default:
+                return Vector2Int.zero;
+        }
     }
 
-    private Vector3 GetcellPosition(Vector3 position, int count, AxisType type, GridType gridType,
-        GridSetting setting)
+    private Vector3 GetcellPosition(Vector3 position, int count, AxisType type, GridType gridType, GridSetting setting)
     {
         var axis = count * GetDistance(gridType, setting).y;
         switch (type)
@@ -148,12 +153,16 @@ public class GridCreator
     {
         var isPairHorizontal = coordinate.x % 2 == 0;
         var isPairVertical = coordinate.y % 2 == 0;
-        return type switch
+
+        switch (type)
         {
-            GridType.Rectangle => true,
-            GridType.Hexagon => isPairHorizontal == isPairVertical,
-            _ => throw new ArgumentOutOfRangeException(nameof(type), type, null)
-        };
+            case GridType.Rectangle:
+                return true;
+            case GridType.Hexagon:
+                return isPairHorizontal == isPairVertical;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(type), type, null);
+        }
     }
 
     private static void SetCenter(GameObject parent)
@@ -178,7 +187,7 @@ public class GridCreator
                 //One step more if hexagon and vertical
                 if (gridType == GridType.Hexagon)
                 {
-                    if (direction is Direction.Down || direction is Direction.Up)
+                    if (direction == Direction.Down || direction == Direction.Up)
                         coordinate = coordinate.GetCoordinate(direction);
                 }
 

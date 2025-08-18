@@ -187,22 +187,24 @@ public class LevelMap : Level
                     _blockTartget.ActiveOutline(true);
                     _blockSellect = null;
 
-                    onDoHammerBoosterEvent?.Raise((_blockTartget.Model, null, () =>
+                    onDoHammerBoosterEvent?.Raise(new HammerBoosterData
                     {
-                        if (_blockTartget.IsAlive)
+                        target = _blockTartget.Model,
+                        onStart = null,
+                        onComplete = () =>
                         {
-                            _blockTartget.ActiveOutline(false);
-                            if (!_blockTartget.IsFrezering) _blockTartget.OnHammerBoosterHit();
-                            else
+                            if (_blockTartget.IsAlive)
                             {
-                                freezeSystem.OnFreezerCrack(_blockTartget);
+                                _blockTartget.ActiveOutline(false);
+                                if (!_blockTartget.IsFrezering) _blockTartget.OnHammerBoosterHit();
+                                else freezeSystem.OnFreezerCrack(_blockTartget);
                             }
-                        }
 
-                        _isStartHammerBooster = false;
-                        _isDoingHammer = false;
-                        _blockTartget = null;
-                    }));
+                            _isStartHammerBooster = false;
+                            _isDoingHammer = false;
+                            _blockTartget = null;
+                        }
+                    });
                     return;
                 }
 
@@ -243,8 +245,12 @@ public class LevelMap : Level
                         }
                     }
 
-                    onDoSuckBoosterEvent?.Raise((_blockTartget.Model, listTarget, null,
-                        () =>
+                    onDoSuckBoosterEvent?.Raise(new SuckBoosterData
+                    {
+                        target = _blockTartget.Model,
+                        targets = listTarget,
+                        onStart = null,
+                        onUse = () =>
                         {
                             var listBlockIgnore = new List<BlockColor>();
                             foreach (var block in listBlockTarget)
@@ -261,7 +267,10 @@ public class LevelMap : Level
                                     {
                                         block.RemoveBlockChainLink();
                                     }
-                                    else if (block.IsRoping) { block.RemoveBlockRopeLink(); }
+                                    else if (block.IsRoping)
+                                    {
+                                        block.RemoveBlockRopeLink();
+                                    }
 
                                     block.ActiveOutline(false);
                                 }
@@ -277,7 +286,7 @@ public class LevelMap : Level
                                 listBlockIgnore.Clear();
                             }
                         },
-                        () =>
+                        onComplete = () =>
                         {
                             foreach (var block in listBlockTarget) block.OnSuckBoosterHit();
 
@@ -286,7 +295,9 @@ public class LevelMap : Level
                             listBlockTarget.Clear();
                             listTarget.Clear();
                             _blockTartget = null;
-                        }));
+                        }
+                    });
+
                     return;
                 }
 

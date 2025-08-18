@@ -34,22 +34,22 @@ public class SuckBooster : BoosterData
         onStartSuckBoosterEvent.Raise(true);
     }
 
-    void OnSelectBlockToBreak((GameObject target, List<GameObject> targets, Action onStart, Action onUse, Action onComplete) infor)
+    void OnSelectBlockToBreak(SuckBoosterData info)
     {
         onDoSuckBoosterEvent.OnRaised -= OnSelectBlockToBreak;
-        onStartActionUse += infor.onStart;
-        onCompleteActionUse += infor.onComplete;
-        _currentTargets = infor.targets;
+        onStartActionUse += info.onStart;
+        onCompleteActionUse += info.onComplete;
+        _currentTargets = info.targets;
 
         if (_currentBooster == null) _currentBooster = Instantiate(boosterAnimation);
-        _currentBoosterPos = infor.target.transform.position + offsetBoosterAnimationSpawn;
+        _currentBoosterPos = info.target.transform.position + offsetBoosterAnimationSpawn;
         _currentBooster.OnStartProcess(_currentBoosterPos);
         _currentBooster.Play();
         _index = 0;
         StartCountDownTime();
         _delayUse = App.Delay(timeDelayUse, () =>
         {
-            infor.onUse?.Invoke();
+            info.onUse?.Invoke();
             if (soundUsing) _soundUsingCache = playSfxEvent?.Raise(soundUsing);
             OnSuckAllTargets();
         });

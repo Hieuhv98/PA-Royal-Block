@@ -7,6 +7,7 @@ public class SetCenterPosition : MonoBehaviour
     public void SetCenter()
     {
         var childrenArray = GetComponentsInChildren<Transform>();
+        if (childrenArray.Length <= 1) return;
 
         var children = childrenArray.ToList();
         children.RemoveAt(0);

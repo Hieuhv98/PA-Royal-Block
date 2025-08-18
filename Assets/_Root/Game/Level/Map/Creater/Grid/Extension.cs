@@ -5,17 +5,26 @@ public static partial class Extension
 {
     public static Vector2Int GetCoordinate(this Vector2Int coordinate, Direction direction)
     {
-        return direction switch
+        switch (direction)
         {
-            Direction.Up => new Vector2Int(coordinate.x, coordinate.y + 1),
-            Direction.Down => new Vector2Int(coordinate.x, coordinate.y - 1),
-            Direction.Right => new Vector2Int(coordinate.x + 1, coordinate.y),
-            Direction.Left => new Vector2Int(coordinate.x - 1, coordinate.y),
-            Direction.UpRight => new Vector2Int(coordinate.x + 1, coordinate.y + 1),
-            Direction.UpLeft => new Vector2Int(coordinate.x - 1, coordinate.y + 1),
-            Direction.DownRight => new Vector2Int(coordinate.x + 1, coordinate.y - 1),
-            Direction.DownLeft => new Vector2Int(coordinate.x - 1, coordinate.y - 1),
-            _ => throw new ArgumentOutOfRangeException(nameof(direction), direction, null)
-        };
+            case Direction.Up:
+                return new Vector2Int(coordinate.x, coordinate.y + 1);
+            case Direction.Down:
+                return new Vector2Int(coordinate.x, coordinate.y - 1);
+            case Direction.Right:
+                return new Vector2Int(coordinate.x + 1, coordinate.y);
+            case Direction.Left:
+                return new Vector2Int(coordinate.x - 1, coordinate.y);
+            case Direction.UpRight:
+                return new Vector2Int(coordinate.x + 1, coordinate.y + 1);
+            case Direction.UpLeft:
+                return new Vector2Int(coordinate.x - 1, coordinate.y + 1);
+            case Direction.DownRight:
+                return new Vector2Int(coordinate.x + 1, coordinate.y - 1);
+            case Direction.DownLeft:
+                return new Vector2Int(coordinate.x - 1, coordinate.y - 1);
+            default:
+                throw new ArgumentOutOfRangeException(nameof(direction), direction, null);
+        }
     }
 }

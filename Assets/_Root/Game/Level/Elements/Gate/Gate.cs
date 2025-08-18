@@ -268,15 +268,21 @@ public class Gate : ObjectBase, IShutter
     public bool IsCanUpdateLinker(CellGrid cellGridStart) => cellGridStart != null && (listCellLinker.Count == 0 || !listCellLinker[0] || !listCellLinker[0].Equals(cellGridStart));
     public Vector2Int GetLinkerVector()
     {
-        return eDirectionType switch
+        switch (eDirectionType)
         {
-            EDirectionType.UP => new Vector2Int(Mathf.FloorToInt(Size.x), -1),
-            EDirectionType.DOWN => new Vector2Int(Mathf.FloorToInt(Size.x), 0),
-            EDirectionType.LEFT => new Vector2Int(0, Mathf.FloorToInt(Size.y)),
-            EDirectionType.RIGHT => new Vector2Int(-1, Mathf.FloorToInt(Size.y)),
-            _ => Vector2Int.zero
-        };
+            case EDirectionType.UP:
+                return new Vector2Int(Mathf.FloorToInt(Size.x), -1);
+            case EDirectionType.DOWN:
+                return new Vector2Int(Mathf.FloorToInt(Size.x), 0);
+            case EDirectionType.LEFT:
+                return new Vector2Int(0, Mathf.FloorToInt(Size.y));
+            case EDirectionType.RIGHT:
+                return new Vector2Int(-1, Mathf.FloorToInt(Size.y));
+            default:
+                return Vector2Int.zero;
+        }
     }
+
 #if UNITY_EDITOR
     protected override void OnChangeInEditor()
     {

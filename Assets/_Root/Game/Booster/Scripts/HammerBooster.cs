@@ -20,12 +20,12 @@ public class HammerBooster : BoosterData
         onStartHammerBoosterEvent.Raise(true);
     }
 
-    void OnSelectBlockToBreak((GameObject target, Action onStart, Action onComplete) infor)
+    void OnSelectBlockToBreak(HammerBoosterData info)
     {
         onDoHammerBoosterEvent.OnRaised -= OnSelectBlockToBreak;
-        onStartActionUse += infor.onStart;
-        onCompleteActionUse += infor.onComplete;
-        _currentTarget = infor.target;
+        onStartActionUse += info.onStart;
+        onCompleteActionUse += info.onComplete;
+        _currentTarget = info.target;
 
         if (_currentBooster == null) _currentBooster = Instantiate(boosterAnimation);
         _currentBooster.OnStartProcess(_currentTarget.transform.position + offsetBoosterAnimationSpawn);
@@ -34,6 +34,7 @@ public class HammerBooster : BoosterData
         StartCountDownTime();
         if (useBoosterMissionCount) useBoosterMissionCount.Add(1);
     }
+
 
     public override void StopUse()
     {
