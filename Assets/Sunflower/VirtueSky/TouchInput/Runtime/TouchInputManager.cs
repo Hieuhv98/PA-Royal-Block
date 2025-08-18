@@ -28,7 +28,7 @@ namespace VirtueSky.TouchInput
         private bool _mouseUpdate;
 
 
-        private void OnEnable()
+        private void Awake()
         {
             if (inputPreventTouchVariable != null)
             {
@@ -37,7 +37,7 @@ namespace VirtueSky.TouchInput
             }
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             if (inputPreventTouchVariable != null)
             {

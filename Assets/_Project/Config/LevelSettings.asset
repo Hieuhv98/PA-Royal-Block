@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LevelSettings
   m_EditorClassIdentifier: 
   maxLevel: 300
-  startLoopLevel: 10
+  startLoopLevel: 0
   levelFormat: Level {0}
   listLevels:
   - {fileID: 6240662489935725577, guid: 4bd8427148c36e442b9685ffb8a2f2b3, type: 3}

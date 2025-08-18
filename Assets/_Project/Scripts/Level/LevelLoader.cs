@@ -18,17 +18,20 @@ namespace TheBeginning.LevelSystem
         private Level CurrentLevel() => currentLevel;
         private Level PreviousLevel() => previousLevel;
 
-        public override void OnEnable()
+        public void Awake()
         {
-            base.OnEnable();
             eventLoadLevel.AddListener(LoadLevel);
             eventGetCurrentLevel.AddListener(CurrentLevel);
             eventGetPreviousLevel.AddListener(PreviousLevel);
+
+            LoadLevel();
         }
 
-        private void Start()
+        private void OnDestroy()
         {
-            var instance = LoadLevel();
+            eventLoadLevel.RemoveListener(LoadLevel);
+            eventGetCurrentLevel.RemoveListener(CurrentLevel);
+            eventGetPreviousLevel.RemoveListener(PreviousLevel);
         }
 
         private Level LoadLevel()

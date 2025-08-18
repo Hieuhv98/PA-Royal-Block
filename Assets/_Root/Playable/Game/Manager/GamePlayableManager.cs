@@ -26,12 +26,7 @@ public class GamePlayableManager : MonoBehaviour
 
     [SerializeField] private LevelModeData levelModeData;
     private ELevelMode _currentLevelMode;
-
-    private LevelMap _levelMap;
-    private Tween _delayTimeTween;
     public bool IsGamePlaying => gameState == GameState.PlayingGame;
-    private GameState GetGameState() => gameState;
-
     public void OnEnable()
     {
         callPlayCurrentLevelEvent.AddListener(PlayCurrentLevel);
@@ -87,8 +82,8 @@ public class GamePlayableManager : MonoBehaviour
 
         var currentLevelPrefab = eventLoadLevel.Raise();
         levelHolder.Clear();
-        var level = Instantiate(currentLevelPrefab, levelHolder, false);
-        if (onLoadLevelComplete) onLoadLevelComplete?.Raise();
+        Instantiate(currentLevelPrefab, levelHolder, false);
+        onLoadLevelComplete?.Raise();
     }
 
     private void OnWinGame(float delayPopupShowTime = 2.5f)
@@ -99,15 +94,11 @@ public class GamePlayableManager : MonoBehaviour
 
         gameState = GameState.WinGame;
 
-        _delayTimeTween = DOVirtual.DelayedCall(delayPopupShowTime, () =>
+        DOVirtual.DelayedCall(delayPopupShowTime, () =>
         {
-            Show();
-            void Show()
-            {
-                PopupManager.Show<WinPopup>();
-                PopupManager.Hide<GameplayPopup>();
-                eventLoadLevel.Raise();
-            }
+            PopupManager.Show<WinPopup>();
+            PopupManager.Hide<GameplayPopup>();
+            eventLoadLevel.Raise();
         });
     }
 
@@ -118,7 +109,7 @@ public class GamePlayableManager : MonoBehaviour
             gameState == GameState.WinGame) return;
         gameState = GameState.LoseGame;
 
-        _delayTimeTween = DOVirtual.DelayedCall(delayPopupShowTime, () =>
+        DOVirtual.DelayedCall(delayPopupShowTime, () =>
         {
             PopupManager.Show<LosePopup>();
         });

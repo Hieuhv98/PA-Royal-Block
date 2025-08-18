@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Runtime.CompilerServices;
-using UnityEngine;
 
 namespace VirtueSky.DataStorage
 {
@@ -10,7 +8,7 @@ namespace VirtueSky.DataStorage
     {
         private static bool isInitialized;
         private static int profile;
-        private static Dictionary<string, byte[]> datas = new Dictionary<string, byte[]>();
+        private static Dictionary<string, object> datas = new Dictionary<string, object>();
         private const int INIT_SIZE = 64;
 
         public static bool IsAutoSave { get; set; } = true;
@@ -23,49 +21,12 @@ namespace VirtueSky.DataStorage
         {
             if (isInitialized) return;
             isInitialized = true;
-            Load();
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static byte[] Serialize<T>(T data)
-        {
-            return SerializeAdapter.ToBinary(data);
-        }
-
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static T Deserialize<T>(byte[] bytes)
-        {
-            return SerializeAdapter.FromBinary<T>(bytes);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static void RequireNullCheck()
         {
-            if (datas == null) Load();
-            if (datas == null) throw new NullReferenceException();
-        }
-
-        private static string GetPath => GetDataPath($"data_{profile}.sun");
-
-        static string GetDataPath(string name)
-        {
-            var persistentDataPath = GetPersistentDataPath();
-            if (!Directory.Exists(persistentDataPath))
-            {
-                Directory.CreateDirectory(persistentDataPath);
-            }
-
-            return Path.Combine(persistentDataPath, name);
-        }
-
-        public static string GetPersistentDataPath()
-        {
-#if UNITY_EDITOR
-            return Path.Combine(Directory.GetParent(Application.dataPath).FullName, "TempDataStorage");
-#else
-            return Application.persistentDataPath;
-#endif
+            if (datas == null) datas = new Dictionary<string, object>(INIT_SIZE);
         }
 
         #endregion
@@ -79,9 +40,8 @@ namespace VirtueSky.DataStorage
         {
             if (GameData.profile == profile) return;
 
-            Save();
             GameData.profile = profile;
-            Load();
+            datas.Clear();
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -94,75 +54,42 @@ namespace VirtueSky.DataStorage
         public static void Save()
         {
             OnSaveEvent?.Invoke();
-
-            byte[] bytes = Serialize(datas);
-            File.WriteAllBytes(GetPath, bytes);
         }
 
-
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static async void SaveAsync()
+        public static void SaveAsync()
         {
             OnSaveEvent?.Invoke();
-
-            byte[] bytes = Serialize(datas);
-            await File.WriteAllBytesAsync(GetPath, bytes);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Load()
         {
-            if (!File.Exists(GetPath))
+            if (datas.Count == 0)
             {
-                var stream = File.Create(GetPath);
-                stream.Close();
+                datas = new Dictionary<string, object>(INIT_SIZE);
             }
-
-            byte[] bytes = File.ReadAllBytes(GetPath);
-            if (bytes.Length == 0)
-            {
-                datas.Clear();
-                return;
-            }
-
-            datas = Deserialize<Dictionary<string, byte[]>>(bytes) ?? new Dictionary<string, byte[]>(INIT_SIZE);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static async void LoadAsync()
         {
-            if (!File.Exists(GetPath))
+            if (datas.Count == 0)
             {
-                var stream = File.Create(GetPath);
-                stream.Close();
+                datas = new Dictionary<string, object>(INIT_SIZE);
             }
-
-            byte[] bytes = await File.ReadAllBytesAsync(GetPath);
-            if (bytes.Length == 0)
-            {
-                datas.Clear();
-                return;
-            }
-
-            datas = Deserialize<Dictionary<string, byte[]>>(bytes) ?? new Dictionary<string, byte[]>(INIT_SIZE);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="key"></param>
-        /// <param name="default">If value of <paramref name="key"/> can not be found or empty! will return the default value of data type!</param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static T Get<T>(string key, T @default = default)
         {
             RequireNullCheck();
 
-            datas.TryGetValue(key, out byte[] value);
-            if (value == null || value.Length == 0) return @default;
-
-            return Deserialize<T>(value);
+            if (datas.TryGetValue(key, out object value))
+            {
+                return (T)value;
+            }
+            return @default;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -170,18 +97,8 @@ namespace VirtueSky.DataStorage
         {
             RequireNullCheck();
 
-            bool hasKey;
-            if (datas.TryGetValue(key, out byte[] value))
-            {
-                data = Deserialize<T>(value);
-                hasKey = true;
-            }
-            else
-            {
-                data = default;
-                hasKey = false;
-            }
-
+            bool hasKey = datas.TryGetValue(key, out object value);
+            data = hasKey ? (T)value : default;
             return hasKey;
         }
 
@@ -189,9 +106,7 @@ namespace VirtueSky.DataStorage
         public static void Set<T>(string key, T data)
         {
             RequireNullCheck();
-            byte[] bytes = Serialize(data);
-            if (datas.TryAdd(key, bytes)) return;
-            datas[key] = bytes;
+            datas[key] = data;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -205,30 +120,18 @@ namespace VirtueSky.DataStorage
 
         public static void DeleteFileData()
         {
-            if (File.Exists(GetPath))
-            {
-                File.Delete(GetPath);
-            }
         }
 
-        /// <summary>
-        /// Get raw byte[] of all data of profile
-        /// </summary>
-        /// <returns></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static byte[] Backup()
+        public static object Backup()
         {
-            return SerializeAdapter.ToBinary(datas);
+            return datas;
         }
 
-        /// <summary>
-        /// Load from byte[]
-        /// </summary>
-        /// <param name="bytes"></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void Restore(byte[] bytes)
+        public static void Restore(object data)
         {
-            datas = SerializeAdapter.FromBinary<Dictionary<string, byte[]>>(bytes);
+            datas = (Dictionary<string, object>)data;
         }
 
         #endregion

@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: var_level_current
   m_EditorClassIdentifier: 
   description: 
-  valueDebug: 0
+  valueDebug: 8
   typeId: 0
   guid: 9ea094eb88b77864dad437774ae57775
   customId: 
   initializeValue: 8
-  isSetData: 0
+  isSetData: 1
   isSaveData: 0
   isRaiseEvent: 0
-  currentValue: 0
+  currentValue: 8
   isClamped: 0
   minMax: {x: 0, y: 100}

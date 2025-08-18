@@ -49,10 +49,7 @@ namespace VirtueSky.Audio
 
             sfxVolume.AddListener(OnSfxVolumeChanged);
             musicVolume.AddListener(OnMusicVolumeChanged);
-        }
 
-        public override void OnEnable()
-        {
             base.OnEnable();
             eventPlaySfx.AddListener(PlaySfx);
             eventStopSfx.AddListener(StopSfx);
@@ -67,9 +64,8 @@ namespace VirtueSky.Audio
             eventStopMusic.AddListener(StopMusic);
         }
 
-        public override void OnDisable()
+        public void OnDestroy()
         {
-            base.OnDisable();
             eventPlaySfx.RemoveListener(PlaySfx);
             eventStopSfx.RemoveListener(StopSfx);
             eventFinishSfx.RemoveListener(FinishSfx);

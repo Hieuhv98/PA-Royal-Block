@@ -6,19 +6,16 @@ namespace VirtueSky.Core
     {
         public virtual void OnEnable()
         {
-            SubTick();
         }
 
         public virtual void OnDisable()
         {
-            UnSubTick();
         }
 
 
         public virtual void Initialize()
         {
         }
-
         public virtual void Tick()
         {
         }
@@ -33,6 +30,20 @@ namespace VirtueSky.Core
 
         public virtual void CleanUp()
         {
+        }
+        public void Update()
+        {
+            Tick();
+        }
+
+        public void FixedUpdate()
+        {
+            FixedTick();
+        }
+
+        public void LateUpdate()
+        {
+            LateTick();
         }
 
         void SubTick()
