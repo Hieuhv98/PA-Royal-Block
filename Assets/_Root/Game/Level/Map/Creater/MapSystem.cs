@@ -21,12 +21,15 @@ public class MapSystem : BaseMono
 
     private Vector2 GetDistance(GridType gridType, GridSetting cellSetting)
     {
-        return gridType switch
+        switch (gridType)
         {
-            GridType.Rectangle => cellSetting.rectangle.Size,
-            GridType.Hexagon => cellSetting.hexagon.Size,
-            _ => Vector2Int.zero
-        };
+            case GridType.Rectangle:
+                return cellSetting.rectangle.Size;
+            case GridType.Hexagon:
+                return cellSetting.hexagon.Size;
+            default:
+                return Vector2.zero;
+        }
     }
 
     public CellGrid GetCell(Vector3 position)

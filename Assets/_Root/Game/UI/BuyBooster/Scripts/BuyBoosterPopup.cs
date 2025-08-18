@@ -75,14 +75,23 @@ public class BuyBoosterPopup : UIPopup
         }
     }
 
-    TrackingEnum.EPlacement placementType => _currentBoosterData.elementType switch
+    TrackingEnum.EPlacement placementType
     {
-        EElementType.PauseTimeBooster => TrackingEnum.EPlacement.buy_freeze_time,
-        EElementType.HammerBooster => TrackingEnum.EPlacement.buy_hammer,
-        EElementType.SuckBooster => TrackingEnum.EPlacement.buy_magnet,
-        _ => TrackingEnum.EPlacement.buy_booster_in_game
-    };
-
+        get
+        {
+            switch (_currentBoosterData.elementType)
+            {
+                case EElementType.PauseTimeBooster:
+                    return TrackingEnum.EPlacement.buy_freeze_time;
+                case EElementType.HammerBooster:
+                    return TrackingEnum.EPlacement.buy_hammer;
+                case EElementType.SuckBooster:
+                    return TrackingEnum.EPlacement.buy_magnet;
+                default:
+                    return TrackingEnum.EPlacement.buy_booster_in_game;
+            }
+        }
+    }
 
     void BuyBooster(bool isAds)
     {
