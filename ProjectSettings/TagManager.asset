@@ -4,24 +4,26 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Lightting
+  - BonusArea
   - FxTemporaire
+  - Lightting
+  - Scene_Launcher
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Light
+  - UIService
+  - Block
+  - Placement
+  - Wall
+  - Gate
+  - Character
+  - Resource
+  - AVT
   - 
   - 
   - 
@@ -42,7 +44,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Effect
-    uniqueID: 3702430777
     locked: 0
