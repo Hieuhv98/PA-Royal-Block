@@ -22,7 +22,7 @@ namespace TheBeginning.UI
         public string stringFormatLevel = "{0}";
 
         public TextMeshProUGUI levelTypeText;
-
+        [SerializeField] private List<BoosterUI> boosterUIs = new List<BoosterUI>();
         [FormerlySerializedAs("boardLevelText")] [SerializeField]
         private Image boardLevel;
 
@@ -137,7 +137,10 @@ namespace TheBeginning.UI
         protected override void OnAfterShow()
         {
             base.OnAfterShow();
-
+            foreach (var boosterUI in boosterUIs)
+            {
+                boosterUI.Init();
+            }
         }
 
         protected override void OnBeforeHide()

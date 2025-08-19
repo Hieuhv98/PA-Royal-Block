@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 
 namespace VirtueSky.DataStorage
 {
@@ -16,14 +15,12 @@ namespace VirtueSky.DataStorage
 
         #region Internal Stuff
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Init()
         {
             if (isInitialized) return;
             isInitialized = true;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static void RequireNullCheck()
         {
             if (datas == null) datas = new Dictionary<string, object>(INIT_SIZE);
@@ -33,9 +30,8 @@ namespace VirtueSky.DataStorage
 
         #region Public API
 
-        public static bool IsInitialized => isInitialized;
+        public static bool IsInitialized { get { return isInitialized; } }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void ChangeProfile(int profile)
         {
             if (GameData.profile == profile) return;
@@ -44,25 +40,21 @@ namespace VirtueSky.DataStorage
             datas.Clear();
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool VerifyProfile(int profile)
         {
             return GameData.profile == profile;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Save()
         {
-            OnSaveEvent?.Invoke();
+            if (OnSaveEvent != null) OnSaveEvent.Invoke();
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void SaveAsync()
         {
-            OnSaveEvent?.Invoke();
+            if (OnSaveEvent != null) OnSaveEvent.Invoke();
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Load()
         {
             if (datas.Count == 0)
@@ -71,7 +63,6 @@ namespace VirtueSky.DataStorage
             }
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static async void LoadAsync()
         {
             if (datas.Count == 0)
@@ -80,55 +71,49 @@ namespace VirtueSky.DataStorage
             }
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static T Get<T>(string key, T @default = default)
+        public static T Get<T>(string key, T defaultValue = default(T))
         {
             RequireNullCheck();
 
-            if (datas.TryGetValue(key, out object value))
+            object value;
+            if (datas.TryGetValue(key, out value))
             {
                 return (T)value;
             }
-            return @default;
+            return defaultValue;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool TryGet<T>(string key, out T data)
         {
             RequireNullCheck();
 
-            bool hasKey = datas.TryGetValue(key, out object value);
-            data = hasKey ? (T)value : default;
+            object value;
+            bool hasKey = datas.TryGetValue(key, out value);
+            data = hasKey ? (T)value : default(T);
             return hasKey;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Set<T>(string key, T data)
         {
             RequireNullCheck();
             datas[key] = data;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool HasKey(string key) => datas.ContainsKey(key);
+        public static bool HasKey(string key) { return datas.ContainsKey(key); }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void DeleteKey(string key) => datas.Remove(key);
+        public static void DeleteKey(string key) { datas.Remove(key); }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void DeleteAll() => datas.Clear();
+        public static void DeleteAll() { datas.Clear(); }
 
         public static void DeleteFileData()
         {
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static object Backup()
         {
             return datas;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Restore(object data)
         {
             datas = (Dictionary<string, object>)data;

@@ -55,17 +55,12 @@ public abstract class BoosterData : ScriptableObject
 
     public int AmountBoosterCanBuy => amountBoosterCanBuy;
     public int AmountBoosterCanAddWatchAds => amountBoosterCanAddWatchAds;
-    private int _amount;
     [ContextMenu("ResetID")]
     void UpdateID() => iD = this.name;
 
     protected virtual void OnDisable()
     {
         _isProcessing = false;
-    }
-    protected void OnEnable()
-    {
-        _amount = defaultValue;
     }
 
     public event Action<int> OnValueChange
@@ -101,7 +96,7 @@ public abstract class BoosterData : ScriptableObject
 
     public Sprite GetLockIcon => levelModeData.GetLevelData().getLevelTypeInfor.GetBoosterSpriteLock(elementType);
 
-    public int GetAmount() => _amount;
+    public int GetAmount() => UserData.GetBoosterAmount(iD, defaultValue);
 
     public bool IsCanUse() => GetAmount() > 0 && !IsProcessing && IsUnlocked && !IsBoosterRelativeIsUsing();
 
@@ -220,7 +215,7 @@ public abstract class BoosterData : ScriptableObject
 
     void ChangeValue(int value)
     {
-        _amount = value;
+        UserData.SetBoosterAmount(iD, value);
         balanceAmount.Value = value;
         onValueChange?.Invoke(value);
     }

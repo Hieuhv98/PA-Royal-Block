@@ -106,7 +106,6 @@ namespace VirtueSky.Component
         RectTransform Panel;
         Rect LastSafeArea = new Rect(0, 0, 0, 0);
         Vector2Int LastScreenSize = new Vector2Int(0, 0);
-        ScreenOrientation LastOrientation = ScreenOrientation.AutoRotation;
 
         [SerializeField]
         bool ConformX = true; // Conform to screen safe area on X-axis (default true, disable to ignore)
@@ -142,14 +141,12 @@ namespace VirtueSky.Component
 
             if (safeArea != LastSafeArea
                 || Screen.width != LastScreenSize.x
-                || Screen.height != LastScreenSize.y
-                || Screen.orientation != LastOrientation)
+                || Screen.height != LastScreenSize.y)
             {
                 // Fix for having auto-rotate off and manually forcing a screen orientation.
                 // See https://forum.unity.com/threads/569236/#post-4473253 and https://forum.unity.com/threads/569236/page-2#post-5166467
                 LastScreenSize.x = Screen.width;
                 LastScreenSize.y = Screen.height;
-                LastOrientation = Screen.orientation;
 
                 ApplySafeArea(safeArea);
             }
