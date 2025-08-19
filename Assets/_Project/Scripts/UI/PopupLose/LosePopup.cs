@@ -24,7 +24,7 @@ namespace TheBeginning.UI
             var data = loseData.GetData();
             Instantiate(data.prefab, iconTransform);
             headerText.sprite = data.loseName;
-            headerText.SetNativeSize();
+            if(headerText != null) headerText.SetNativeSize();
 
             heartData.Minus(1);
         }

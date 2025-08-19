@@ -15,7 +15,7 @@ public class BoardBoosterGuidPopup : UIPopup
     {
         iconBooster.sprite = boosterManager.currentUsingBooster.boosterIconGuid;
         descriptionText.text = boosterManager.currentUsingBooster.boosterDescription;
-        iconBooster.SetNativeSize();
+        if(iconBooster != null) iconBooster.SetNativeSize();
         base.OnBeforeShow();
         onShowing?.Raise(true);
     }

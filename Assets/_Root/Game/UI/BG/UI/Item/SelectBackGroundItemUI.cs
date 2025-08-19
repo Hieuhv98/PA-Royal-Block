@@ -12,7 +12,7 @@ public class SelectBackGroundItemUI : BaseMono
     {
         _data = planeData;
         imgIcon.sprite = planeData.Icon;
-        imgIcon.SetNativeSize();
+        if (imgIcon != null) imgIcon.SetNativeSize();
 
         UpdateUI();
     }

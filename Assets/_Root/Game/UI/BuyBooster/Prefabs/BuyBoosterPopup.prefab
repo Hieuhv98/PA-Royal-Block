@@ -1620,6 +1620,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin_Group
       objectReference: {fileID: 0}
+    - target: {fileID: 8100701126856239942, guid: 5ece1524dd9c0dd43acf5cd0a3982069, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100701126856239942, guid: 5ece1524dd9c0dd43acf5cd0a3982069, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8899125457524094717, guid: 5ece1524dd9c0dd43acf5cd0a3982069, type: 3}
       propertyPath: m_IsActive
       value: 0

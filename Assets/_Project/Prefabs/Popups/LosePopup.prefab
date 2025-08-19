@@ -1319,6 +1319,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1468105648884148360}
     m_Modifications:
+    - target: {fileID: 86823500823681052, guid: f29843c22ea3fa645848481a61340539, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 86823500823681052, guid: f29843c22ea3fa645848481a61340539, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 846522799310180154, guid: f29843c22ea3fa645848481a61340539, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 846522799310180154, guid: f29843c22ea3fa645848481a61340539, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1540505243277538039, guid: f29843c22ea3fa645848481a61340539, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1399,6 +1415,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2734483090062644195, guid: f29843c22ea3fa645848481a61340539, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734483090062644195, guid: f29843c22ea3fa645848481a61340539, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3135272418553013705, guid: f29843c22ea3fa645848481a61340539, type: 3}
       propertyPath: m_Name
       value: HeartGroup
@@ -1436,6 +1460,14 @@ PrefabInstance:
     - target: {fileID: 4526762894648051215, guid: ca5ae16b013f62843a584402cc3471c3, type: 3}
       propertyPath: m_Name
       value: lose_gate_closed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322084376372887206, guid: ca5ae16b013f62843a584402cc3471c3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6322084376372887206, guid: ca5ae16b013f62843a584402cc3471c3, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6562700351617920823, guid: ca5ae16b013f62843a584402cc3471c3, type: 3}
       propertyPath: m_Pivot.x

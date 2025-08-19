@@ -103,7 +103,7 @@ namespace TheBeginning.UI
             preStartLevelEvent.OnRaised += OnPreStartLevel;
             showCTAButtonEvent.OnRaised += OnShowCTAButton;
             groupUI.SetActive(true);
-        }
+         }
 
         void UpdateBoardLevelMode()
         {
@@ -113,12 +113,6 @@ namespace TheBeginning.UI
             boardLevelText.sprite = data.getLevelTypeInfor.GetIconBoardLevelSprite();
             boardLevel.sprite = data.getLevelTypeInfor.iconBoardGameplay;
             settingIcon.sprite = data.getLevelTypeInfor.GetIconSettingSprite();
-            boardLevelText.SetNativeSize();
-            levelText.fontMaterial = data.getLevelTypeInfor.GetColorTextLevelModeGameplay();
-            levelTextNumber.fontMaterial = data.getLevelTypeInfor.GetColorTextLevelModeGameplay();
-            boardLevel.SetNativeSize();
-            replayIcon.SetNativeSize();
-            settingIcon.SetNativeSize();
 
             Refresh();
         }

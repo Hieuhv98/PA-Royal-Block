@@ -23,6 +23,7 @@ public class GamePlayableManager : MonoBehaviour
     [SerializeField] private FloatEvent callWinLevelEvent;
     [SerializeField] private FloatEvent callLoseLevelEvent;
     [SerializeField] private PlaySfxEvent playSfxEvent;
+    [SerializeField] private GameObject level;
 
     [SerializeField] private LevelModeData levelModeData;
     private ELevelMode _currentLevelMode;

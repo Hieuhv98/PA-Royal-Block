@@ -37,9 +37,10 @@ namespace VirtueSky.Variables
             Value += value;
         }
 
+        private int _int = 8;
         public override int Value
         {
-            get => isSetData ? GameData.Get(Id, initializeValue) : runtimeValue;
+            get => _int;
             set
             {
                 var clampedValue = IsClamped ? Mathf.Clamp(value, minMax.x, minMax.y) : value;
@@ -53,7 +54,7 @@ namespace VirtueSky.Variables
                 }
                 else
                 {
-                    runtimeValue = clampedValue;
+                    _int = clampedValue;
                 }
 #if UNITY_EDITOR
                 currentValue = clampedValue;

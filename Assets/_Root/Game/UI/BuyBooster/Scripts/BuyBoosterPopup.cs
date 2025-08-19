@@ -56,8 +56,8 @@ public class BuyBoosterPopup : UIPopup
         nameBoosterText.text = _currentBoosterData.boosterName;
         priceText.text = _currentBoosterData.priceBuyBooster.ToString();
         boosterNameIcon.sprite = _currentBoosterData.BoosterNameIcon();
-        icon.SetNativeSize();
-        boosterNameIcon.SetNativeSize();
+        if(icon != null) icon.SetNativeSize();
+        if(boosterNameIcon != null) boosterNameIcon.SetNativeSize();
     }
 
     void UpdateStatus()

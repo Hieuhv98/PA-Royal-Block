@@ -28,8 +28,8 @@ public class UnlockNewElementPopup : UIPopup
         titleIcon.sprite = _currentUnlcokNewElementInfor.titleIconUnlock;
         unlockIcon.sprite = _currentUnlcokNewElementInfor.mainIconUnlock;
         description.text = _currentUnlcokNewElementInfor.description;
-        titleIcon.SetNativeSize();
-        unlockIcon.SetNativeSize();
+        if(titleIcon != null) titleIcon.SetNativeSize();
+        if (unlockIcon != null) unlockIcon.SetNativeSize();
     }
 
     public void OnClickContinue()

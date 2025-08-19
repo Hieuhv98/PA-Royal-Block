@@ -120,7 +120,7 @@ public abstract class BoosterUI : BaseMono
     void UpdateUI()
     {
         iconLock.sprite = boosterData.GetLockIcon;
-        iconLock.SetNativeSize();
+        if(iconLock != null) iconLock.SetNativeSize();
         groupLock.SetActive(!boosterData.IsUnlocked);
         if (!boosterData.IsUnlocked)
         {
@@ -129,7 +129,7 @@ public abstract class BoosterUI : BaseMono
 
         groupAmountText.SetActive(boosterData.IsUnlocked);
         icon.sprite = boosterData.BoosterIcon;
-        icon.SetNativeSize();
+        if(icon != null) icon.SetNativeSize();
         UpdateStatus();
     }
 

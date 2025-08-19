@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: var_level_current
   m_EditorClassIdentifier: 
   description: 
-  valueDebug: 8
+  valueDebug: 0
   typeId: 0
   guid: 9ea094eb88b77864dad437774ae57775
   customId: 
   initializeValue: 8
-  isSetData: 1
+  isSetData: 0
   isSaveData: 0
   isRaiseEvent: 0
   currentValue: 8

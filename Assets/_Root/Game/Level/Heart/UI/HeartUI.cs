@@ -57,7 +57,7 @@ public class HeartUI : BaseMono
             ? iconHeartImmortal
             : iconHeartNormal;
         iconHeart.sprite = sprite;
-        iconHeart.SetNativeSize();
+        if(iconHeart != null) iconHeart.SetNativeSize();
     }
     void OnUpdateHeart(int heart)
     {
@@ -93,7 +93,7 @@ public class HeartUI : BaseMono
     {
         txtCount.gameObject.SetActive(false);
         iconHeart.sprite = iconHeartImmortal;
-        iconHeart.SetNativeSize();
+        if(iconHeart != null) iconHeart.SetNativeSize();
         txtFull.SetActive(false);
         if (plusIcon != null) plusIcon.SetActive(false);
     }
@@ -101,7 +101,7 @@ public class HeartUI : BaseMono
     void OnEndStatusImmortal()
     {
         iconHeart.sprite = iconHeartNormal;
-        iconHeart.SetNativeSize();
+        if (iconHeart != null) iconHeart.SetNativeSize();
         OnUpdateHeart(heartData.Count);
     }
 
