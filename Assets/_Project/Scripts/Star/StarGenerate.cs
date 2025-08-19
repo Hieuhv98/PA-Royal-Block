@@ -104,7 +104,8 @@ public class StarGenerate : BaseMono
         for (int i = 0; i < numberCoin; i++)
         {
             await Task.Delay(Random.Range(0, delay));
-            GameObject coin = coinPrefab.Spawn(holder);
+            GameObject coin = Instantiate(coinPrefab, holder.transform);
+            Debug.Log("create coin");
             coin.transform.localScale = Vector3.one * scale;
             coinsActive.Add(coin);
             coin.transform.position = from;
@@ -112,7 +113,7 @@ public class StarGenerate : BaseMono
             MoveToTarget(coin, () =>
             {
                 coinsActive.Remove(coin);
-                coin.DeSpawn();
+                coin.gameObject.SetActive(false);
                 if (!isScaleIconTo)
                 {
                     isScaleIconTo = true;
@@ -133,6 +134,7 @@ public class StarGenerate : BaseMono
 
     private void MoveToTarget(GameObject coin, Action completed)
     {
+        Debug.Log("move coin");
         coin.transform
             .DOMove(coin.transform.position + (Vector3)Random.insideUnitCircle * offsetNear,
                 durationNear)

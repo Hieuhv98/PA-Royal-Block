@@ -6,7 +6,6 @@ namespace VirtueSky.DataStorage
     public static class GameData
     {
         private static bool isInitialized;
-        private static int profile;
         private static Dictionary<string, object> datas = new Dictionary<string, object>();
         private const int INIT_SIZE = 64;
 
@@ -23,7 +22,8 @@ namespace VirtueSky.DataStorage
 
         private static void RequireNullCheck()
         {
-            if (datas == null) datas = new Dictionary<string, object>(INIT_SIZE);
+            if (datas == null)
+                datas = new Dictionary<string, object>(INIT_SIZE);
         }
 
         #endregion
@@ -32,27 +32,14 @@ namespace VirtueSky.DataStorage
 
         public static bool IsInitialized { get { return isInitialized; } }
 
-        public static void ChangeProfile(int profile)
-        {
-            if (GameData.profile == profile) return;
-
-            GameData.profile = profile;
-            datas.Clear();
-        }
-
-        public static bool VerifyProfile(int profile)
-        {
-            return GameData.profile == profile;
-        }
-
         public static void Save()
         {
-            if (OnSaveEvent != null) OnSaveEvent.Invoke();
+            OnSaveEvent?.Invoke();
         }
 
         public static void SaveAsync()
         {
-            if (OnSaveEvent != null) OnSaveEvent.Invoke();
+            OnSaveEvent?.Invoke();
         }
 
         public static void Load()
@@ -63,13 +50,6 @@ namespace VirtueSky.DataStorage
             }
         }
 
-        public static async void LoadAsync()
-        {
-            if (datas.Count == 0)
-            {
-                datas = new Dictionary<string, object>(INIT_SIZE);
-            }
-        }
 
         public static T Get<T>(string key, T defaultValue = default(T))
         {
@@ -78,7 +58,10 @@ namespace VirtueSky.DataStorage
             object value;
             if (datas.TryGetValue(key, out value))
             {
-                return (T)value;
+                if (value is T tValue)
+                {
+                    return tValue;
+                }
             }
             return defaultValue;
         }
@@ -89,8 +72,14 @@ namespace VirtueSky.DataStorage
 
             object value;
             bool hasKey = datas.TryGetValue(key, out value);
-            data = hasKey ? (T)value : default(T);
-            return hasKey;
+            if (hasKey && value is T tValue)
+            {
+                data = tValue;
+                return true;
+            }
+
+            data = default(T);
+            return false;
         }
 
         public static void Set<T>(string key, T data)
@@ -105,10 +94,6 @@ namespace VirtueSky.DataStorage
 
         public static void DeleteAll() { datas.Clear(); }
 
-        public static void DeleteFileData()
-        {
-        }
-
         public static object Backup()
         {
             return datas;
@@ -116,9 +101,15 @@ namespace VirtueSky.DataStorage
 
         public static void Restore(object data)
         {
-            datas = (Dictionary<string, object>)data;
+            if (data is Dictionary<string, object> restoredData)
+            {
+                datas = restoredData;
+            }
+            else
+            {
+                throw new InvalidCastException("Data cannot be restored, invalid type.");
+            }
         }
-
         #endregion
     }
 }

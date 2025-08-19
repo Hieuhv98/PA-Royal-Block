@@ -267,7 +267,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 1, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
-  speed: 25
+  speed: 30
   speedSmooth: 0.0015
   speedMoveToPositionWhenEndSellect: 8
   easeWhenEndSelect: 0

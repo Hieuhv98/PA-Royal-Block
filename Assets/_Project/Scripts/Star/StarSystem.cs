@@ -27,14 +27,11 @@ public class StarSystem : MonoBehaviour
 
     public static event Action ActionChangeValue;
 
+    private static int _star = 0;
     private static int CurrentStar
     {
-        get => GameData.Get(CURRENT_STAR, 0);
-        set
-        {
-            GameData.Set(CURRENT_STAR, value);
-            GameData.Save();
-        }
+        get => _star;
+        set => _star = value;
     }
 
     private void Awake()

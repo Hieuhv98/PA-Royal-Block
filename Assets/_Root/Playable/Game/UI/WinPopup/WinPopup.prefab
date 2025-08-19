@@ -41656,9 +41656,9 @@ PrefabInstance:
       value: Coin_Group
       objectReference: {fileID: 0}
     - target: {fileID: 8100701126856239942, guid: 5ece1524dd9c0dd43acf5cd0a3982069, type: 3}
-      propertyPath: m_fontAsset
+      propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3604630249188092411, guid: 84e0baa60f5db564faa4464280c2970d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41692,10 +41692,6 @@ PrefabInstance:
     - target: {fileID: 3636319279232467908, guid: 8cad8f14c6e4dae4b80965e267e193d2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6828499404750654071, guid: 8cad8f14c6e4dae4b80965e267e193d2, type: 3}
-      propertyPath: m_fontAsset
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8357360764121067160, guid: 8cad8f14c6e4dae4b80965e267e193d2, type: 3}
       propertyPath: m_Pivot.x

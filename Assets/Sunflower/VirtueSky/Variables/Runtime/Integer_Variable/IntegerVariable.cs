@@ -37,10 +37,10 @@ namespace VirtueSky.Variables
             Value += value;
         }
 
-        private int _int = 8;
+        [SerializeField] private int intValue = 8;
         public override int Value
         {
-            get => _int;
+            get => intValue;
             set
             {
                 var clampedValue = IsClamped ? Mathf.Clamp(value, minMax.x, minMax.y) : value;
@@ -54,7 +54,7 @@ namespace VirtueSky.Variables
                 }
                 else
                 {
-                    _int = clampedValue;
+                    intValue = clampedValue;
                 }
 #if UNITY_EDITOR
                 currentValue = clampedValue;

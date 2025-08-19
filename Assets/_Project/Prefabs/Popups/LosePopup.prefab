@@ -1461,14 +1461,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: lose_gate_closed
       objectReference: {fileID: 0}
-    - target: {fileID: 6322084376372887206, guid: ca5ae16b013f62843a584402cc3471c3, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6322084376372887206, guid: ca5ae16b013f62843a584402cc3471c3, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6562700351617920823, guid: ca5ae16b013f62843a584402cc3471c3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

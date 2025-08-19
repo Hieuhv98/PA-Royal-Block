@@ -17,14 +17,11 @@ public class CoinSystem : MonoBehaviour
     private static event Action<int, Vector3, TrackingEnum.EResourceType, TrackingEnum.EResourceName, TrackingEnum.EResourceReason, TrackingEnum.EPlacement> OnSetCoinEvent;
     private const string CURRENT_COIN = "CURRENT_COIN";
 
+    private static int _coin = 0;
     private static int CurrentCoin
     {
-        get => GameData.Get(CURRENT_COIN, 0);
-        set
-        {
-            GameData.Set(CURRENT_COIN, value);
-            GameData.Save();
-        }
+        get => _coin;
+        set => _coin = value;
     }
 
     private void Awake()

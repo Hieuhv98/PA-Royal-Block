@@ -13,7 +13,7 @@ public class TouchSystem : BaseMono
     [SerializeField] InputEventTouchBegin inputEventTouchBegin;
     [SerializeField] InputEventTouchEnd inputEventTouchEnd;
 
-    private Vector3 _lastPosition = Vector3.zero;
+    private Vector3 _lastPosition = Vector3.one;
 
     public Vector3 LastPosition => _lastPosition;
     public Action<Vector3> ActionBegin, ActionEnd;

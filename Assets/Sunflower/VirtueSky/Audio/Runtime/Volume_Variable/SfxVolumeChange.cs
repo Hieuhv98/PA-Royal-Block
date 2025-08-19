@@ -7,5 +7,8 @@ namespace VirtueSky.Audio
         fileName = "sfx_volume")]
     public class SfxVolumeChange : FloatVariable
     {
+        [SerializeField] private float volume = 1f;
+
+        public override float Value { get => volume; set => volume = value; }
     }
 }
