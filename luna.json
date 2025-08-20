@@ -89,6 +89,25 @@
                 "resources"
             ],
             "excludes": [
+                "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+                "Assets/_Project/Fonts/LilitaOne-Regular.ttf",
+                "Assets/_Project/Fonts/MADE TOMMY SOFT BOLD PERSONAL USE.OTF",
+                "Assets/_Project/Fonts/Roboto-Medium.ttf",
+                "Assets/_Project/Fonts/Vi.asset",
+                "Assets/_Project/Sprites/_GamePlay/prototype_512x512_blue2.png",
+                "Assets/_Root/Game/Level/Elements/Freeze/Material/Material-Wood.psd",
+                "Assets/_Root/Game/UI/BG/Data/Textures/bg2.png",
+                "Assets/_Root/Game/UI/BG/Data/Textures/bg3.png",
+                "Assets/_Root/Game/UI/BG/UI/Sprites/icon_bg2.png",
+                "Assets/_Root/Game/UI/BG/UI/Sprites/icon_bg3.png",
+                "Assets/_Root/Game/UI/HomeUI/Sprite/Home/Iconitems/layer_block.png",
+                "Assets/_Root/Game/UI/HomeUI/Sprite/Home/Iconitems/locked_chain.png",
+                "Assets/_Root/Game/UI/HomeUI/Sprite/Home/Iconitems/rope_block.png",
+                "Assets/_Root/Game/UI/HomeUI/Sprite/Home/btn_play2.png",
+                "Assets/_Root/Game/UI/UnlockNewUI/Sprites/color_path.png",
+                "Assets/_Root/Game/UI/UnlockNewUI/Sprites/ice_gate.png",
+                "Assets/_Root/Game/UI/UnlockNewUI/Sprites/rope_block.png",
+                "Assets/_Root/Game/UI/UnlockNewUI/Sprites/text_ice_gate.png",
                 "**/Editor/",
                 "**/FacebookSDK/",
                 "**/googleads**/",
@@ -124,7 +143,11 @@
                 "Stubs/AppsFlyer",
                 "Stubs/IronSource",
                 "Stubs/Vungle",
-                "Stubs/MoreMountains.NiceVibrations"
+                "Stubs/MoreMountains.NiceVibrations",
+                "Assets/_Root/Game/Level/Elements/Chain/Meshs/Chain_3.fbx",
+                "Assets/_Root/Game/Level/Elements/Chain/Meshs/Chain_2.fbx",
+                "Assets/_Root/Game/Level/Elements/Chain/Meshs/Chain_1.fbx",
+                "Assets/_Root/Game/Level/Elements/Chain/Meshs/Chain_T.fbx"
             ],
             "includes": [
                 "Assets/TextMesh Pro/Resources/TMP Settings.asset",
@@ -46571,7 +46594,7 @@
                     "startTime": "00:00.000",
                     "endTime": "00:00.000",
                     "lengthInSeconds": 0.0,
-                    "bitrate": 128,
+                    "bitrate": 64,
                     "script": "",
                     "ext": ""
                 },
@@ -46587,10 +46610,10 @@
                         "name": "Assets/_Project/Audio/New/BGM/bgm_ingame1.mp3"
                     },
                     {
-                        "channels": 1,
+                        "channels": 2,
                         "startTime": "00:00.000",
-                        "endTime": "00:00.000",
-                        "lengthInSeconds": 0.0,
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
                         "bitrate": 128,
                         "script": "",
                         "ext": "",
@@ -46605,6 +46628,26 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/_Project/Audio/New/Lose/sfx_lose.mp3"
+                    },
+                    {
+                        "channels": 2,
+                        "startTime": "00:00.000",
+                        "endTime": "00:00.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Project/Audio/New/Win/Fireworks.mp3"
+                    },
+                    {
+                        "channels": 2,
+                        "startTime": "00:00.000",
+                        "endTime": "00:00.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Project/Audio/warning.mp3"
                     }
                 ]
             },
