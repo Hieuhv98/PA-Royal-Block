@@ -112,7 +112,7 @@ namespace TheBeginning.UI
             replayIcon.sprite = data.getLevelTypeInfor.GetIconReplayLevelSprite();
             boardLevelText.sprite = data.getLevelTypeInfor.GetIconBoardLevelSprite();
             boardLevel.sprite = data.getLevelTypeInfor.iconBoardGameplay;
-            settingIcon.sprite = data.getLevelTypeInfor.GetIconSettingSprite();
+            //settingIcon.sprite = data.getLevelTypeInfor.GetIconSettingSprite();
 
             Refresh();
         }
@@ -177,9 +177,14 @@ namespace TheBeginning.UI
         {
         }
 
+        private bool _isShowCTAButton = false;
         public void OnClickReplay()
         {
-            Transittion.Play(close: () => { replayEvent.Raise(); });
+            _isShowCTAButton = true;
+            Transittion.Play(close: () => 
+            {
+                replayEvent.Raise(); 
+            });
         }
 
         List<Tween> _tweenAddTime = new List<Tween>();
@@ -241,7 +246,7 @@ namespace TheBeginning.UI
 
         void OnShowCTAButton(bool isShow)
         {
-            ctaButton.SetActive(isShow);
+            ctaButton.SetActive(isShow || _isShowCTAButton);
         }
     }
 }
