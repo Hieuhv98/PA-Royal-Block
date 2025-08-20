@@ -53,18 +53,7 @@ namespace VirtueSky.TouchInput
         private void Update()
         {
             if (preventTouch) return;
-#if UNITY_EDITOR
-            if (UnityEngine.Device.SystemInfo.deviceType != DeviceType.Desktop)
-            {
-                HandleTouch();
-            }
-            else
-            {
-                HandleMouse();
-            }
-#else
-            HandleTouch();
-#endif
+            HandleMouse();
         }
 
         void HandleTouch()

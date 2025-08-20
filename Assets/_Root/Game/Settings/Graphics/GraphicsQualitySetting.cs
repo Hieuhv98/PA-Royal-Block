@@ -8,10 +8,11 @@ public class GraphicsQualitySetting : ScriptableObject
     [SerializeField] private List<GraphicsQualityLevel> graphicSettings;
     [SerializeField] private int levelDefault = 3;
 
+    private int _qualityIndex = 0;
     public int QualityValue 
     {
-        get => GameData.Get(guid, Mathf.Min(levelDefault, graphicSettings.Count));
-        set => GameData.Set(guid, value);
+        get => _qualityIndex;
+        set => _qualityIndex = value;
     }
     public int SettingsCount => graphicSettings.Count;
     public List<GraphicsQualityLevel> GraphicSettings => graphicSettings;

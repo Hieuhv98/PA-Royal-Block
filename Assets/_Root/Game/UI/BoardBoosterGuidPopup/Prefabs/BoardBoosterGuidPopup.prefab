@@ -480,8 +480,7 @@ MonoBehaviour:
   strength: 0.2
   useSoundFx: 1
   playSfxEvent: {fileID: 11400000, guid: f8b47f732f214a74ea2758c176b166be, type: 2}
-  soundDataClickButton: {fileID: 11400000, guid: 9d60ab45b0d57a94092e6ba29fdcc6af,
-    type: 2}
+  soundDataClickButton: {fileID: 11400000, guid: 9d60ab45b0d57a94092e6ba29fdcc6af, type: 2}
 --- !u!1 &7370416450938019894
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,7 +41,7 @@ MonoBehaviour:
     levelMode: 0
   - levelIndex: 9
     star: 1
-    levelMode: 0
+    levelMode: 2
   - levelIndex: 10
     star: 1
     levelMode: 1

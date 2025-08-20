@@ -1,7 +1,7 @@
 {
     "version": "6.4.0",
     "projectId": "cda918763811bfc4d809dfe72c2337f6",
-    "applicationID": 27960,
+    "applicationID": 0,
     "creativeName": "PA_13_08_25_HVH",
     "pgServer": "EU",
     "window": {
@@ -163,10 +163,10 @@
         "enableMecanimWASM": true,
         "minify": true,
         "forceUncompressed": false,
-        "forceBase64": true,
+        "forceBase64": false,
         "graphicsConstraint": 28,
         "genericCheck": true,
-        "disableAntiAliasing": true,
+        "disableAntiAliasing": false,
         "forceStableRandomSeed": false,
         "unusedModules": [
             {
@@ -2375,10 +2375,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.SkinnedMeshRenderer",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.AI.NavMeshAgent",
                 "excluded": true
             },
@@ -3376,7 +3372,7 @@
             },
             {
                 "name": "UnityEditor.Animations.AnimatorLayerBlendingMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEditor.Animations.AnimatorUpdateMode",
@@ -3548,7 +3544,7 @@
             },
             {
                 "name": "UnityEngine.AnimatorUpdateMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.AnisotropicFiltering",
@@ -8831,19 +8827,11 @@
                 "excluded": false
             },
             {
-                "name": "VirtueSky.Audio.MusicVolumeChange",
-                "excluded": false
-            },
-            {
                 "name": "VirtueSky.Audio.PauseMusicEvent",
                 "excluded": false
             },
             {
                 "name": "VirtueSky.Audio.ResumeMusicEvent",
-                "excluded": false
-            },
-            {
-                "name": "VirtueSky.Audio.SfxVolumeChange",
                 "excluded": false
             },
             {
@@ -9119,10 +9107,6 @@
                 "excluded": false
             },
             {
-                "name": "VirtueSky.Variables.Vector3Variable",
-                "excluded": false
-            },
-            {
                 "name": "VirtueSky.Events.EventResponse",
                 "excluded": false
             },
@@ -9243,10 +9227,6 @@
                 "excluded": true
             },
             {
-                "name": "DG.Tweening.Plugins.IntPlugin",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.Plugins.LongPlugin",
                 "excluded": true
             },
@@ -9280,7 +9260,7 @@
             },
             {
                 "name": "DG.Tweening.Core.Enums.FilterType",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "DG.Tweening.Core.Enums.NestedTweenFailureBehaviour",
@@ -9288,7 +9268,7 @@
             },
             {
                 "name": "DG.Tweening.Core.Enums.OperationType",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "DG.Tweening.Core.Enums.RewindCallbackMode",
@@ -9480,10 +9460,6 @@
             },
             {
                 "name": "VirtueSky.Vfx.VfxSpawner",
-                "excluded": true
-            },
-            {
-                "name": "AnimatorComponent",
                 "excluded": true
             },
             {
@@ -9727,10 +9703,6 @@
                 "excluded": true
             },
             {
-                "name": "BoardBoosterGuidPopup",
-                "excluded": true
-            },
-            {
                 "name": "EBlockState",
                 "excluded": false
             },
@@ -9928,11 +9900,11 @@
                     },
                     {
                         "name": "isPunctuation",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isNumber",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isControl",
@@ -10252,7 +10224,7 @@
                     },
                     {
                         "name": "parseInt",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "tryParseInt",
@@ -18196,11 +18168,11 @@
                 "instanceMethods": [
                     {
                         "name": "SetParameters",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ResetSamplers",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -18578,11 +18550,11 @@
                     },
                     {
                         "name": "Sample",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetLastTimingAmongEvents",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -19098,7 +19070,7 @@
                     },
                     {
                         "name": "localPosition#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "position#get",
@@ -19298,7 +19270,7 @@
                     },
                     {
                         "name": "RotateAround",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TransformDirection$1",
@@ -25675,14 +25647,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "ChangeProfile",
-                        "excluded": true
-                    },
-                    {
-                        "name": "VerifyProfile",
-                        "excluded": true
-                    },
-                    {
                         "name": "Save",
                         "excluded": false
                     },
@@ -25693,10 +25657,6 @@
                     {
                         "name": "Load",
                         "excluded": false
-                    },
-                    {
-                        "name": "LoadAsync",
-                        "excluded": true
                     },
                     {
                         "name": "Get",
@@ -25720,10 +25680,6 @@
                     },
                     {
                         "name": "DeleteAll",
-                        "excluded": true
-                    },
-                    {
-                        "name": "DeleteFileData",
                         "excluded": true
                     },
                     {
@@ -26644,7 +26600,7 @@
                     },
                     {
                         "name": "text#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "text#set",
@@ -28348,19 +28304,19 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Reset",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -29716,7 +29672,7 @@
                     },
                     {
                         "name": "GetState$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetMotion",
@@ -30668,7 +30624,7 @@
                     },
                     {
                         "name": "Stop",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Stop$1",
@@ -30702,7 +30658,7 @@
                     },
                     {
                         "name": "StringToHash",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "HashToString",
@@ -30722,7 +30678,7 @@
                     },
                     {
                         "name": "avatar#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "avatar#set",
@@ -30790,7 +30746,7 @@
                     },
                     {
                         "name": "layerCount#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isInitialized#get",
@@ -31042,15 +30998,15 @@
                     },
                     {
                         "name": "AddTime",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ApplyLayerMixing",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetWeightFor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
@@ -31058,7 +31014,7 @@
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
@@ -31070,7 +31026,7 @@
                     },
                     {
                         "name": "TriggerEvents",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateAnimatorController",
@@ -31086,7 +31042,7 @@
                     },
                     {
                         "name": "Play$4",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Play$1",
@@ -31158,7 +31114,7 @@
                     },
                     {
                         "name": "SyncLayers",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CalculateSyncDuration",
@@ -31166,7 +31122,7 @@
                     },
                     {
                         "name": "SampleMecanim",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CreateWASMSampler",
@@ -33970,7 +33926,7 @@
                     },
                     {
                         "name": "To$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "To$6",
@@ -34118,7 +34074,7 @@
                     },
                     {
                         "name": "CompleteAndReturnKilledTot$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CompleteAndReturnKilledTot$2",
@@ -34154,7 +34110,7 @@
                     },
                     {
                         "name": "Kill",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Kill$1",
@@ -34404,7 +34360,7 @@
                     },
                     {
                         "name": "ElapsedPercentage",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ElapsedDirectionalPercentage",
@@ -35178,7 +35134,7 @@
                     },
                     {
                         "name": "GetNumberFromText",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetTextValueFromNumber",
@@ -37258,7 +37214,7 @@
                     },
                     {
                         "name": "HandleMouse",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Awake",
@@ -37658,7 +37614,7 @@
                     },
                     {
                         "name": "MoveToTarget",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetNumberCoin",
@@ -37666,7 +37622,7 @@
                     },
                     {
                         "name": "ScaleIconTo",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -38266,7 +38222,7 @@
                     },
                     {
                         "name": "MoveToTarget",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetNumberCoin",
@@ -38274,7 +38230,7 @@
                     },
                     {
                         "name": "AddComplete",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -39402,7 +39358,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -39414,7 +39370,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -39438,7 +39394,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -39450,7 +39406,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -39624,7 +39580,7 @@
                     },
                     {
                         "name": "SetCellOnGrid",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnHammerBoosterHit",
@@ -39914,7 +39870,7 @@
                     },
                     {
                         "name": "insideUnitCircle#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "rotation#get",
@@ -40854,15 +40810,15 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Play",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Action",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Idle",
@@ -40878,11 +40834,11 @@
                     },
                     {
                         "name": "OnStartProcess",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -41466,7 +41422,7 @@
                     },
                     {
                         "name": "OnActionBoosterStart",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnSelectBlockToBreak",
@@ -41514,7 +41470,7 @@
                     },
                     {
                         "name": "OnActionBoosterStart",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnSelectBlockToBreak",
@@ -41884,7 +41840,7 @@
                     },
                     {
                         "name": "OnTriggerExit",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -42414,7 +42370,7 @@
                 "instanceMethods": [
                     {
                         "name": "GetBlock",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetBlockAlive",
@@ -42986,7 +42942,7 @@
                     },
                     {
                         "name": "AddActiveTweenToSequence",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DespawnAll",
@@ -43034,7 +42990,7 @@
                     },
                     {
                         "name": "FilteredOperation",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Complete",
@@ -43050,7 +43006,7 @@
                     },
                     {
                         "name": "Goto",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Pause",
@@ -43378,7 +43334,7 @@
                     },
                     {
                         "name": "DOScale",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOScaleX",
@@ -43426,7 +43382,7 @@
                     },
                     {
                         "name": "DOJump",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOLocalJump",
@@ -43498,7 +43454,7 @@
                     },
                     {
                         "name": "DOKill",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOKill$1",
@@ -43624,11 +43580,11 @@
                     },
                     {
                         "name": "SetLoops",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetLoops$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetEase$2",
@@ -43680,7 +43636,7 @@
                     },
                     {
                         "name": "OnStart",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnPlay",
@@ -43696,7 +43652,7 @@
                     },
                     {
                         "name": "OnUpdate",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnStepComplete",
@@ -43724,7 +43680,7 @@
                     },
                     {
                         "name": "Append",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Prepend",
@@ -43732,7 +43688,7 @@
                     },
                     {
                         "name": "Join",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Insert",
@@ -43800,7 +43756,7 @@
                     },
                     {
                         "name": "SetRelative",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetRelative$1",
@@ -44012,7 +43968,7 @@
                     },
                     {
                         "name": "SetRelativeEndValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetChangeValue",
@@ -44704,7 +44660,7 @@
                     },
                     {
                         "name": "EasedValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "EasedValue$1",
@@ -44774,7 +44730,7 @@
                     },
                     {
                         "name": "DoInsert",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DoAppendInterval",
@@ -45888,7 +45844,7 @@
                     },
                     {
                         "name": "AddTime",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TriggerAnimationEvents",
@@ -45896,23 +45852,23 @@
                     },
                     {
                         "name": "UpdateStateParameters",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CheckForTransitionsToPlay",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddTimeToStates",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "EvaluateAnyTransition",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "EvaluateStateTransition",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CalculateEffectiveState",
@@ -45920,7 +45876,7 @@
                     },
                     {
                         "name": "CheckForTransitionsToSchedule",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -45942,7 +45898,7 @@
                     },
                     {
                         "name": "SpeedValue#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -45954,15 +45910,15 @@
                     },
                     {
                         "name": "AddTime",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateFromParameters",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ValidateParameters",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IsName",
@@ -45974,11 +45930,11 @@
                     },
                     {
                         "name": "OnStateEnter",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnStateUpdate",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnStateExit",
@@ -46010,15 +45966,15 @@
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Resume",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Pause",
@@ -46026,7 +45982,7 @@
                     },
                     {
                         "name": "FixedTick",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -46117,6 +46073,188 @@
                         "excluded": true
                     }
                 ]
+            },
+            {
+                "className": "VirtueSky.Variables.Vector3Variable",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Value#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Value#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "VirtueSky.Audio.MusicVolumeChange",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Value#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Value#set",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "VirtueSky.Audio.SfxVolumeChange",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Value#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Value#set",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.Plugins.IntPlugin",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFrom$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrom",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConvertToStartValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetRelativeEndValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetChangeValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSpeedBasedDuration",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EvaluateAndApply",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "BoardBoosterGuidPopup",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnBeforeShow",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopUseBooster",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnAfterHide",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.SkinnedMeshRenderer",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "m_BlendShapeWeights#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "m_BlendShapeWeights#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "sharedMesh#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "sharedMesh#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "rootBone#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "rootBone#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bones#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bones#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "blendShape#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetBlendShapeWeight",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetBlendShapeWeight",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "AnimatorComponent",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Play",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Stop",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetSpeed",
+                        "excluded": true
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -46136,8 +46274,8 @@
         "rules": {
             "texture": {
                 "default": {
-                    "maxWidth": 1024,
-                    "maxHeight": 1024,
+                    "maxWidth": 256,
+                    "maxHeight": 256,
                     "format": "png32",
                     "compression": "quantSize",
                     "quality": 65,
@@ -46156,8 +46294,8 @@
                         "name": "Resources/unity_builtin_extra/Default-Particle"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -46166,8 +46304,8 @@
                         "name": "Assets/_Project/Fonts/TMP_LilitaOne.asset"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -46176,8 +46314,8 @@
                         "name": "Assets/_Project/Fonts/TMP_LilitaOne_Outline.asset"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -46186,8 +46324,8 @@
                         "name": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -46196,8 +46334,8 @@
                         "name": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -46206,8 +46344,8 @@
                         "name": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -46216,8 +46354,8 @@
                         "name": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -46226,8 +46364,8 @@
                         "name": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
@@ -46236,20 +46374,200 @@
                         "name": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset"
                     },
                     {
-                        "maxWidth": 1024,
-                        "maxHeight": 1024,
+                        "maxWidth": 256,
+                        "maxHeight": 256,
                         "format": "png32",
                         "compression": "none",
                         "quality": 65,
                         "script": "",
                         "ext": "",
                         "name": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset"
+                    },
+                    {
+                        "maxWidth": 2048,
+                        "maxHeight": 2048,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/BG/Data/Textures/bg1.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Playable/Game/UI/WinPopup/Animation/level_completed/level_completed.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Playable/Game/UI/WinPopup/Animation/star_done/star_done.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Playable/Game/UI/WinPopup/Animation/win_screen/win_screen.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/Transition/Sprites/Transition.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/Level/Animation/trans_hard_lv/trans_hard_lv.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_manget_blue.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_manget_red.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_manget_purple.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_hammer_purple.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_hammer_blue.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_hammer_red.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_clock_blue.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_clock_purple.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_clock_red.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_pause_blue.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_pause_purple.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Root/Game/UI/GamePlay/New/Gameplay/btn_pause_red.png"
                     }
                 ]
             },
             "sound": {
                 "default": {
-                    "channels": 1,
+                    "channels": 2,
                     "startTime": "00:00.000",
                     "endTime": "00:00.000",
                     "lengthInSeconds": 0.0,
@@ -46257,7 +46575,38 @@
                     "script": "",
                     "ext": ""
                 },
-                "overrides": []
+                "overrides": [
+                    {
+                        "channels": 2,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Project/Audio/New/BGM/bgm_ingame1.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:00.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Project/Audio/New/Lose/sfx_almost_out_of_time.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:00.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/_Project/Audio/New/Lose/sfx_lose.mp3"
+                    }
+                ]
             },
             "font": {
                 "default": {
@@ -46274,7 +46623,12 @@
                 "default": {
                     "halfPrecision": true
                 },
-                "overrides": []
+                "overrides": [
+                    {
+                        "halfPrecision": true,
+                        "name": "Assets/_Root/Game/Level/Elements/Chain/Meshs/Chain_3.fbx"
+                    }
+                ]
             },
             "animations": {
                 "default": {

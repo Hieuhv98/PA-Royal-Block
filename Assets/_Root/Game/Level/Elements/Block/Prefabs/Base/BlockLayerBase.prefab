@@ -248,7 +248,7 @@ MonoBehaviour:
   massOrigin: 100
   massWhenMove: 100
   detectionModeOrigin: 1
-  detectionModeWhenMove: 2
+  detectionModeWhenMove: 3
   posYUpWhenStartMin: 2
   posYUpWhenStartMax: 3
   posYUpWhenMove: 0.5

@@ -46,3 +46,4 @@ MonoBehaviour:
     shadowProjection: 0
     shadowDistance: 88
     shadowNearPlaneOffset: 0
+  levelDefault: 0

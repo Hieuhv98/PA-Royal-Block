@@ -23,9 +23,9 @@ public class GamePlayableManager : MonoBehaviour
     [SerializeField] private FloatEvent callWinLevelEvent;
     [SerializeField] private FloatEvent callLoseLevelEvent;
     [SerializeField] private PlaySfxEvent playSfxEvent;
-    [SerializeField] private GameObject level;
 
     [SerializeField] private LevelModeData levelModeData;
+    [SerializeField] private GraphicsQualitySetting graphicsQualitySetting;
     private ELevelMode _currentLevelMode;
     public bool IsGamePlaying => gameState == GameState.PlayingGame;
     public void OnEnable()
@@ -48,6 +48,7 @@ public class GamePlayableManager : MonoBehaviour
 
     public void Start()
     {
+        graphicsQualitySetting.Refresh();
         PlayCurrentLevel();
     }
 
