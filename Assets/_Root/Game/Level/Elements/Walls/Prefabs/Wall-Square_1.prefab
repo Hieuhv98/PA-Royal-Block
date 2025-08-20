@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6992241079389874661}
   - component: {fileID: 4832026600853825716}
   - component: {fileID: 825234543683444923}
-  - component: {fileID: 7565707732550803049}
   m_Layer: 0
   m_Name: 3D
   m_TagString: Untagged
@@ -60,9 +59,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -88,41 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7565707732550803049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 548177410211998497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edb91c2f29d9ee649857309a8c572d9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Algorithm: 1
-  MaxHullVertices: 64
-  MaxHulls: 128
-  InternalScale: 10
-  Precision: 0.8
-  CreateMeshAssets: 1
-  CreateHullMesh: 1
-  DebugLog: 0
-  LegacyDepth: 6
-  ShowAdvancedOptions: 1
-  MinHullVolume: 0.00001
-  BackFaceDistanceFactor: 0.2
-  NormalizeInputMesh: 0
-  ForceNoMultithreading: 0
-  PhysMaterial: {fileID: 13400000, guid: 21c08522624abd94bbb7d105d1d45c8c, type: 2}
-  IsTrigger: 0
-  m_aGoHulls:
-  - {fileID: 4104251102685953681}
-  - {fileID: 0}
-  LastMaterial: {fileID: 13400000, guid: 21c08522624abd94bbb7d105d1d45c8c, type: 2}
-  LastIsTrigger: 0
-  LargestHullVertices: 64
-  LargestHullFaces: 124
 --- !u!1 &1781352243871663611
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,10 +157,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3671321015792915189}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Mass: 100
-  m_LinearDamping: 0
-  m_AngularDamping: 0
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}

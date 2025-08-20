@@ -21,7 +21,7 @@ MonoBehaviour:
   isSetData: 0
   isSaveData: 0
   isRaiseEvent: 0
-  currentValue: 14
+  currentValue: 9
   isClamped: 0
   minMax: {x: 0, y: 100}
   intValue: 8
